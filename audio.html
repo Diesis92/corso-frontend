@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio>
+        <source src="webinar.mp3" type="audio/mpeg">
+        <source src="webinar.ogg" type="audio/ogg">
+        Attenzione! Il to browser non supporta questo elemento <!--viene visualizzato nel caso il browser non è in grado
+        di produrre l'audio-->
+    </audio>
+    <picture> <!--prevede le immagini scalate-->
+        <source media="(min-width: 1200px )" srcset="immagineBig.jpg">
+        <source media="(min-width: 768px )" srcset="immagineMid.jpg">
+        <img src="/CorsoEpicode/assets/gatto.jpg" alt="gatto" height="1200" width="768px">
+    </picture>
+</body>
+</html>
