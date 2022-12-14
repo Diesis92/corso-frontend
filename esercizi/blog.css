@@ -1,0 +1,15 @@
+
+p { 
+    font-size: 30px;
+}
+em { 
+    font-weight: bold; color: gray;
+}
+
+p strong {
+    color: hsla(hue, saturation, lightness, alpha)
+}
+
+ul, ol {
+    margin-left: 45px;
+}

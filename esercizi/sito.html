@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sito.css">
+    <style> /* L'ultimo stile applicato vince*/
+        p {
+            color: red;
+            letter-spacing: 5px;
+        }
+
+        section p {
+            text-transform: lowercase;
+            text-align: center;
+            text-shadow: -5px -5px 3px 10px blue;
+        }
+
+        #terzo{
+            background-color: black;
+            color: white;
+        }
+
+        #terzo span {
+            font-style: italic;
+        }
+
+        .evidenza {
+            background-color: yellow;
+        }
+
+        .grassetto {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        :hover{
+            background-color: brown1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Benvenuti ~ </h1> <!--tilde ALT+126-->
+    <section>
+    <p>Questo è il mio sito <span class="evidenza grassetto"></span> web</p>
+    </section>
+    <p class="hover">ciao</p>
+    <p style="color: black !important; text-indent: 10px; font-weight: normal">Questo è un paragrafo</p> <!--lo stile inline ha priorità maggiore sia sullo stile che determina il 
+    singolo file sulla stessa pagina HTML, sia sul CSS esterno-->
+    <p id="terzo">Questo è un altro <span class="evidenza grassetto">paragrafo</span></p>
+</body>
+</html>

@@ -1,0 +1,11 @@
+html {
+    font-size: 150%;
+}
+
+body {
+    font-size: 1.3em; /*il 130%rispetto al parent*/
+    font-family: sans-serif
+}
+
+
+

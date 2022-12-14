@@ -1,0 +1,41 @@
+html { /*root*/
+    font-size: 68.5%;
+}
+
+body {
+    font-size: 1.5rem;
+}
+
+header h1 {
+    text-align: center;
+    background-color: green;
+}
+
+article h1 {
+    text-align: center;
+}
+
+article p:first-of-type::first-letter{ /*:--> tuttol'elemento, :: --> parte dell'elemto
+    selezionato*/
+
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+article h1::before {
+    content: open-quote;
+}
+
+article h1::after {
+    content: close-quote;
+}
+
+article:hover{
+    font-size: 1.2em;
+}
+.firma {
+    font-weight: bold;
+    color: rgb(132, 68, 68);
+    text-shadow: 0px 0px 5px red;
+}
