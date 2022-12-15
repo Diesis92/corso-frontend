@@ -40,3 +40,36 @@ h1 {
     border-radius: 50%;
     border: 1px solid black
 }
+
+.img {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 50px;
+}
+
+.dv4 {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    /*background: linear-gradient( green 0 25%, green, white, white 33% 58%, white, red 68% 100%);*/
+    /*background: radial-gradient( green 0 25%, green, white, white 33% 58%, white, red 68% 100%);*/
+    background: conic-gradient( green 0 25%, green, white, white 33% 58%, white, red 68% 100%);
+}
+
+.dv5 {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-image: url(/Curriculum3/assets/img/wa.svg), url(/Curriculum3/assets/img/profilo.jpg);
+    background-size: 50px 50px;
+    background-repeat: no-repeat, repeat; /*ripete l'immagine fino a ricoprire il background*/
+    background-position: top center;
+    padding: 50px;
+    color: wheat;
+    text-align: center;
+
+
+}
