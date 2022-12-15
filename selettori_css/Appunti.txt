@@ -1,0 +1,99 @@
+content box il browser deve effettuare un ridimensionamento del box che tiene conto di tutte le dimensioni di widht, height, border e margin
+se il margine è i 0 il border box assicura che un div abbia le dimensioni dchiarate
+margin spazio tra contenitore e il resto della pagina
+padding spazio tra il contenuto e il contenitore
+box sizing modalità con la quale viene aggiunto lo spazio del padding al width
+content box è lopizione di default che aggiunge il padding al widht se invece vogliamo che il padding sia interno al width dobbiamo mettere border box
+il bordo stabilisce il confine tra padding (contenitore) e margin
+outilne al diffrenza del bordo non occupa spazio all'inerno della pagina
+è quindi un bordo che non occupa spazio
+è una cornice che viene sovrapposta alla pagina e non influenza il posizionamento deli altri elementi
+il browser ha la capicità si salvarsi i css
+CDN librerie Content delivery network
+link rel url del css predefinito come libreria
+background-image che possiamo mettere come elemento di sfondo di  un contenitore
+immagine scrollabile sulla finestra o fissa
+posizionamento top, left ect
+div, colore di sfondo immagine,
+div {
+background lightblue url  no-repeat fixed center center;
+}
+background multipli
+div {
+background-image: url1, url2;
+background-repeat: no repeat, repeat;
+background-position: top center, top left
+la virgola serve per definire posizionalmente il comportamento delle varie proprietàù
+linear-gradient= gradiente
+elenco di colori usati dal browser per calcolare in maniera automatica una modfica delle sfumature per produrre una variazazione sfumata da un colore ad un altro
+in particolare, nella prima espressione (esempio slide) viene creata una particolare 
+sfumatura che parte da salmon fino a purple. TrA DIC LORO CI SONO UNA SERIE DI COLORI INTERMEDI
+Un graadiente lienerare solitamente prevede una direzione
+alto, sinistra basso ect e andare verso il lato opposto
+possiamo decidere la direzione attraverso la specifica di un impostazione tiniziale "TO" seguta
+da top, left right o bottom
+possiamo prevedere l'angolo secondo cui il gradiente si sviluppa
+un gradiente può essere composto d apiù colori e si può specifica la velocità di variazioni
+prevedendo però il color stop 
+gradiente radiale sipropaga in cerchi invece di quello lineaee che segue una linea
+conic radiente si propaga in linea su una circoferenza
+il b ox model ci consente di controllare la dimensione dei contenuti
+ombra contenitori
+div {
+box-shadow: 4px 4px 8px 2px #666; /* singola
+box shadow: 4px 4px 8px 2px #666, -4px -4px 8px 2px #333;
+}
+
+i contenitori possono avere un loro grado di opacità
+div{
+opacity: 0.5;
+}
+div {
+opacity: 0.3;
+}
+div {
+overflow: hidden;
+}
+la parte che non è inclusa nel contenitore si chiama overflow,e noi
+decidiamo come quella parte della essere gestita dal browser
+possiamo modificare l'overflow impostandola in hidden, e viene visualizzata
+quella parte di testo che viene visualizzato nel contenitore
+deve essere attivata uno scrolla per far si che l'utente riesca a vedere 
+la parte nascosta scroll bar
+il testo invece viene gestito in maniera da portalo a capo a determinate condizion
+se unaparola non entra nell'ampiezza viene portata a capo interamente
+oppure possiamo effettuare un interruzione per parole troppo lunghe
+div { word-break: break-all;}
+div { word-wrap: break-word;}
+
+Flusso inline o flusso block
+flno inline esempio span, em, strong, img e vengono posizionati di seguono
+block: paragrafi, div e intestazioni perché interrompono il flusso e rappresentano un blocco a sè stante all'interno della stessa pagina
+margine collapse: collassamento dei margini
+margin left e right auto e il contenitore verrà posizionato al contenitore
+
+comportamenti standard
+div { display: block;}
+img { diplay: inline}
+
+comportamenti alterati
+img { diplay: block} l'immagine sia implemnetata in maniera tale da prevdeere un'interruzione del flusso ed introdurre una nuova interrzune del flusso prima che lo vedano
+div {diplay:inline} uno di seguito all'altro
+
+ul li {display:inline-block} in linea ma ha una propria altezza e larghezza
+
+img#banner {diplay:none} fa si che l'elemento al momento non visibile non occupi spazio alla visualizzata
+img#banner{visibility:hidden} l'elemento non è visibile ma occupa ancora lo spazio ad esso destinato
+img#banner{opacity:0} effetto simile a quello che otterremo impostando visbility ad hidden
+
+
+i link possono essere gestiti con gli pseudo classi 
+a:link, a:visited
+
+ol li { list-style-type:upper roman} numeri romani
+nav ul li : marker {color navy} elenco a puntini blu
+ul li: not (:last child) { color green} per tutte le list item che non siano l'ultimo figlio, devono essere verdi
+ ul li > ul { color red}
+ p +ul { margin
+ border-collapse, ovvero, due bordi vicini che possono essere collassati, ovvero, uno sopra all'altro, sovrapposti
+ :nth-child(odd) quando l'ennesimo figlio è x , la proprietà deve essere y

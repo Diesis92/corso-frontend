@@ -70,6 +70,26 @@ h1 {
     padding: 50px;
     color: wheat;
     text-align: center;
+}
 
+.box {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: bisque;
+    box-shadow: -3px 3px 3px 2px;
+    opacity: 1;
+    /*overflow: scroll;*/
+    /*overflow: hidden;*/
+    /*overflow: visible;*/
+    overflow: auto;
+    word-break: break-all; /* taglia la parola*/
+    word-break: break-word; /*taglia la parola e la mette al capo*/
+    text-align:justify /* riempe gli spazi, senza justify invece è tutto allineato a sinistra*/
+}
 
+h1{
+    /*display: none;*/
+    /*display: block;*/
+    /*display: inline; assenza di margine*/
 }

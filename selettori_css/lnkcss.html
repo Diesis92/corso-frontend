@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link css</title>
+    <style>
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: brown;
+        }
+
+        a:active {
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: fuchsia;
+        }
+
+        :target {
+            color: red;
+        }
+
+        ul li::marker {
+            color:  red;
+        }
+
+        ul li.l1::marker {
+            color: green;
+        }
+
+        ul li {
+            color:navy;
+        }
+
+        ul li:not(:last-child)::marker {
+            color: brown;
+        }
+
+        ul li:first-child {
+            font-variant: small-caps;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://www.microsoft.com" target="_blank">microsoft</a> <!--il target blank apre il collegamento in una nuova pagina-->
+    <a href="#par1">Target1</a>
+    <a href="#par2">Questo è il target 1</a>
+    <p id="par1">Questo è il target 1</p>
+    <p id="par2">Questo è il target 2</p>
+    <ul>
+        <li class="l1">Primo elemento</li>
+        <li>Secondo elemnto</li>
+        <li>Terzo elemtno</li>
+    </ul>
+</body>
+</html>

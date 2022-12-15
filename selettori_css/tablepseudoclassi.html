@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tables</title>
+
+    <style>
+        table {
+            border: 3px groove red;
+            border-collapse: separate;
+            border-spacing: 3x;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+        tbody tr:hover {
+            background: radial-gradient(lightgray, gray, lightgray);
+        }
+        tbody tr:nth-child(odd):hover {
+            background: radial-gradient(gray, lightgray, gray);
+        }
+
+        tbody tr {
+            background: linear-gradient(lightgray, gray, lightgray);
+        }
+
+        #t tbody tr:nth-child(odd) {
+            background: linear-gradient(gray, lightgray, gray);
+            color: white;
+        }
+        .t thead tr th {
+            background: linear-gradient(45deg, white, black, white) ;
+            color: white;
+            text-shadow: -1px 1px black;
+        }
+        .rosso {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="t" class="t">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nel<span class="rosso">l</span>o</td>
+                <td>Rizzo</td>
+            </tr>
+            <tr>
+                <td>Maicol</td>
+                <td>Cassarà</td>
+            </tr>
+            <tr>
+                <td>Imane</td>
+                <td>Chakir</td>
+            </tr>
+            <tr>
+                <td>Coddura</td>
+                <td>Rosa Cristina</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+
+</html>
