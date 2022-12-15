@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <link rel="stylesheet" href="/esercizi/blog.css" >
+    <!--<style>
+        body {
+            width: 800px;
+            margin: 0px;
+        }
+
+        header img {
+            float: left;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+            width: 150px;
+            background-color: bisque;
+            list-style: none;
+        }
+    </style> -->
+</head>
+<body>
+    <!--intestazione-->
+   <header>
+    <audio src="/esercizi/assets/audio/tada.mp3" type="audio/mp3" autoplay controls></audio>
+    <!--logo-->
+    <img src="assets/img/challenge.png" height="80" alt="Logo di HTML Challenge">
+    <h1>Html Challenge - Il blog dei developers</h1>
+    <h2>Blog dei developers</h2>
+   </header> 
+   <!--menu di navigazione-->
+   <nav>
+        <ul>
+            <li><a href="blog.html">Home</a></li>
+            <li><a href="articoli.html">Articoli</a></li>
+            <li><a href="job.html">Job</a></li>
+        </ul>
+   </nav>
+   <!--contenitore del sito-->
+   <main>
+        <article>
+            <h3>Come creare un template per i post</h3>
+            <div>di <em>Mario Rossi</em> - pubblicato il <span>25-10-2020</span></div> <!--div e span sono contenuti anonimi che non raccontano ciò che contiene-->
+            <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</p>
+            <p>Le varie aree saranno quindi suddivise in:
+                <ol type="1">
+                    <li>Contenuti di intestazione del tag &lt; header &lt;</li>
+                    <li>Contenuti centrali variabili del tag &lt; main &lt;(corpo principale)</li>
+                    <li>Contenuti di fine pagina comuni, da inserire nel tag &lt; footer &lt;</li>
+                    <li>Formattazione del codice</li>
+                </ol>
+            </p> 
+            <p>
+                Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:
+                <ol type="1">
+                    <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
+                    <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+                    <li>Applicare gli stili CSS</li>
+                    <li>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.
+                        <br>
+                        <table>
+                            <caption>Diffusione del CSS</caption>
+                                <thead> <!--celle-->
+                                    <tr>
+                                        <th>Anno</th> <!--th celle titoli-->
+                                        <th>% di utilizzo</th>
+                                        <th>Supporto browser</th>
+                                    </tr>
+                                </thead> <!--dati-->
+                                <tbody>
+                                    <tr>
+                                        <td>2000</td> <!--td dati-->
+                                        <td>20%</td>
+                                        <td>17%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2002</td>
+                                        <td>35%</td>
+                                        <td>22%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2004</td>
+                                        <td>45%</td>
+                                        <td>42%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2008</td>
+                                        <td>80%</td>
+                                        <td>51%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2012</td>
+                                        <td>100%</td>
+                                        <td>76%</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    </li>
+                </ol>
+            </p>
+            <p>
+                Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo
+                ed essere dei veri developers come loro:
+            </p>
+            <!--video height="480" width="720" src="https://www.youtube.com/watch?v=mwUoqem6fqM&ab_channel=EdoardoMidali" type="video/mp4"></!--video>-->
+            <iframe width="380" height="420" src="https://www.youtube.com/embed/HhpbzPMCKDc" title="Can I Create A Complete Toast Notification Library?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--il tag iframe ci consente di includere all'interno di una pagina il contenutodi un'altra
+            pagina o risorsa-->
+        </article>
+        <section>
+            <h4>Vuoi rimanere aggiornato su altre novità del blog?</h4> 
+            <p> Iscriviti alla nostra newsletter:</p>
+            <form action="elaborazione" method="post">
+            <fieldset> <!--contenitore newsletter-->
+                    <legend>Iscriviti alla nostra newsletter!</legend>
+                    <input type="email" placeholder="inserisci l'email" name="email">
+                    <input type="submit" value="Iscriviti!">
+            </fieldset>
+            </form>
+        </section>
+   </main>
+   <!--elementi della pagina-->
+   <!-- elementi secondari della pagina -->
+   <aside>
+    <h4>Articoli correlati</h4>
+    <div>
+        <a href="post1.html">Validare il codice HTML</a>
+        <div>Categoria: <span>develop</span></div>
+        <div>Data: <span>18-9-2020</span></div>
+    </div>
+    <div>
+        <a href="post2.html">Correggere la sintassi</a>
+        <div>Categoria: <span>develop</span></div>
+        <div>Data: <span>16-9-2020</span></div>
+    </div>
+    <div>
+        <a href="post3.html">Meno Kb nella pagina</a>
+        <div>Categoria: <span>ottimizzazione</span></div>
+        <div>Data: <span>30-9-2020</span></div>
+    </div>
+</aside>
+<!-- pie' di pagina -->
+<footer>
+    <hr>
+    <p>Blog HTML Challenge &copy; 2022</p>
+    <p>Testata online di Nello Rizzo, &reg; 2022, Partita IVA 12345678901<br>
+        Email: <a href="mailto:nellorizzo@live.it">nellorizzo@live.it</a>
+    </p>
+</footer>
+</body>
+</html>
