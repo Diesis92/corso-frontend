@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoelementi</title>
+    <style>
+
+        div:first {
+            font-weight: bold;
+        }
+        p:first-child {
+            background-color: yellow;
+        }
+
+        div :first-of-type {
+            background-color: green;
+        }
+
+        p:last-child {
+            background-color: aqua;
+        }
+
+        div:last-of-type {
+            border: 1px solid blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <p>Primo paragrafo</p>
+    <div>Div interno a body </div>
+    <p>secondo paragrafo</p>
+    <div>
+        <p>Primo paragrafo in div </p>
+        <p>secondo paragrafo in</p>
+    </div>
+</body>
+</html>

@@ -97,3 +97,12 @@ ul li: not (:last child) { color green} per tutte le list item che non siano l'u
  p +ul { margin
  border-collapse, ovvero, due bordi vicini che possono essere collassati, ovvero, uno sopra all'altro, sovrapposti
  :nth-child(odd) quando l'ennesimo figlio è x , la proprietà deve essere y
+ Google font link href stylesheet sulla head dell'html
+ <link href="https://fonts.googleapis.com/css2?family=Diplomata SC&display=swap" rel="stylesheet">
+ Dopo aver fatto questo, possiamo mettere il font all'interno della font family
+ è quindi uno stylesheet che sarà scaricato da remoto 
+ ?& servono a specificare ulteriolmente la risorsa all'interno di un url 
+ All.css rende disposnibili una serie di clasi ognuna delle quali rappresenta un elemento all'interno di tipo icona
+ Per poter utilizzare queste classi è suffiente utilizzare un qualsiasi elemento html <i> che consente di rappresentare l'icona</i>
+ display:inline-block per allineare il menu della nav
+ 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Sviluppo di una pagina web - Blog HTML Challenge</title>
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/images/challenge.png" height="80" alt="Logo di HTML Challenge">
+        <h1>Html Challenge</h1>
+        <h2>Il Blog dei Developers</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="blog.html">Home</a></li>
+            <li><a href="articoli.html">Articoli</a></li>
+            <li><a href="job.html">Job</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h3>Come creare un template per i post</h3>
+            <div class="firma">di <em>Mario Rossi</em> - pubblicato il <span>25-10-2020</span></div>
+            <p>La prima cosa da fare è suddividere in blocchi logici la pagina,
+                identificando le parti comuni da applicare a tutte le pagine.</p>
+            <p>Le varie aree saranno quindi suddivise in:
+            <ol type="1">
+                <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+                <li>Contenuti centrali variabili del tag &lt;main&gt; (corpo principale)</li>
+                <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</li>
+                <li>Formattazione del codice.</li>
+            </ol>
+            </p>
+            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti
+                da selezionare con i CSS.<br>
+                Perciò i passi saranno:
+            <ol type="i">
+                <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo
+                    il tag appropriato</li>
+                <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+                <li>Applicare gli stili CSS</li>
+                <li>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere
+                    la diffusione pressoché totale.
+                    <table>
+                        <caption>Diffusione dei CSS</caption>
+                        <thead>
+                            <tr>
+                                <th>Anno</th>
+                                <th>% di utilizzo</th>
+                                <th>Supporto Browser</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2000</td>
+                                <td>20%</td>
+                                <td>17%</td>
+                            </tr>
+                            <tr>
+                                <td>2002</td>
+                                <td>35%</td>
+                                <td>22%</td>
+                            </tr>
+                            <tr>
+                                <td>2004</td>
+                                <td>45%</td>
+                                <td>42%</td>
+                            </tr>
+                            <tr>
+                                <td>2008</td>
+                                <td>80%</td>
+                                <td>51%</td>
+                            </tr>
+                            <tr>
+                                <td>2012</td>
+                                <td>100%</td>
+                                <td>76%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ol>
+            </p>
+            <p> Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo
+                ed essere stati dei veri developers come loro:</p>
+            <iframe width="360" height="240" src="https://www.youtube.com/embed/HhpbzPMCKDc"
+                title="Can I Create A Complete Toast Notification Library?" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </article>
+        <section>
+            <h4>Vuoi rimanere aggiornato su altre novità del blog?</h4>
+            <form action="elaborazioneiscrizione..." method="post">
+                <fieldset>
+                    <legend>Iscriviti alla nostra newsletter:</legend>
+                    <input type="email" placeholder="Inserisci l'email" name="email">
+                    <input type="submit" value="Iscriviti!">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <aside>
+        <h4>Articoli correlati</h4>
+        <div>
+            <a href="post1.html">Validare il codice HTML</a>
+            <div>Categoria: <span>develop</span></div>
+            <div>Data: <span>18-9-2020</span></div>
+        </div>
+        <div>
+            <a href="post2.html">Correggere la sintassi</a>
+            <div>Categoria: <span>develop</span></div>
+            <div>Data: <span>16-9-2020</span></div>
+        </div>
+        <div>
+            <a href="post3.html">Meno Kb nella pagina</a>
+            <div>Categoria: <span>ottimizzazione</span></div>
+            <div>Data: <span>30-9-2020</span></div>
+        </div>
+    </aside>
+    <footer>
+        <hr>
+        <p>Blog HTML Challenge &copy; 2022</p>
+        <p>Testata online di Nello Rizzo, &reg; 2022, Partita IVA 12345678901<br>
+            Email: <a href="mailto:nellorizzo@live.it">nellorizzo@live.it</a>
+        </p>
+    </footer>
+</body>
+
+</html>
