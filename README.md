@@ -1,8 +1,3 @@
-# Titolo reppo
-# secondo titolo
-
-1. prima
-2. seconda
-3. terza
+Esercizi sviluppo Front-end
 
 
