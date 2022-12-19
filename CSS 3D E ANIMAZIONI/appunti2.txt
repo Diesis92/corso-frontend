@@ -1,0 +1,35 @@
+@page:first decide come la prima pagina deve essere stampata
+webkit  rappresentano specifiche funzionalità di browser
+
+Una trasformazione 3d distorce, rotea e traslae che coinvolge il piano cartesiano
+esse possono essere riferite allo spazio tridimensionale in quanto all'interno della macchin
+è corrisposto un concetto di terza dimesione.
+La fimrnsione z corrisponde alla terza dimensione simulando un posizionamento in pila.
+Prima le animazioni erano getsire dalle tecnlogie javascript all'interno dei browser oppure
+tramite flash che si doveva installare,in particolare adobe che credò un plugin da installare sul browser
+Era uno strumento grafico che implentava uno script che gestiva la parte grafica animata e tridimensionale
+Scalatura, translazione, distorsione, rotazione, possiamo implementare delle trafsormazioni
+complesse con la matrice di trasformazione, cioè una modifica che coinvolge 
+la matematica e possiamo impostare punti PV
+es div { transform: translate (30px, 70px)} sposa di 30 px da sinistra e 70px dall'alto
+sAsse z virtuale, immaginario non visibile se non per sovrapposizione e trasformazione degli elementi
+Animazione CSS3
+Un'animazione si avvale di due valori scandito d aun tempo di esecuzione che il browser andrà a scandire
+le transizioni partono da un valore iniziale e finale
+Una transione ha una sua durata e duranet questi tempo possiamo vedere modificata il valore della proprietà secodno una determinata proprietà
+Trasformazione lineare a velocità costante e un'altra che consente una velocità logaritmica
+
+La transizione applica un tempo entro il quale la transizione viene compiuta
+transition-timing-function
+
+div { width: 200px;
+height:100px;
+background-color:red;
+transition: width 3s,background-color 3s;
+}
+
+div:hover {
+
+}
+
+Curve di bezier,proprietà cubic-brezier

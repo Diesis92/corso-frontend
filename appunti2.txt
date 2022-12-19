@@ -1,2 +1,0 @@
-@page:first decide come la prima pagina deve essere stampata
-webkit  rappresentano specifiche funzionalità di browser

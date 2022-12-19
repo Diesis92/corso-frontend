@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .target {
+            background-color: brown;
+            width: 300px;
+            color: white;
+  /*          transform: rotate(-30deg) translate(300px, 150px) scaleX(2) scaleY(2) 
+                skewX(-20deg) skew(-50deg);
+                transform: skew(-45deg,45deg);*/
+                transform: rotate(45deg);
+                transform-origin: 50px 150px;
+                transition: width 5s; background-color: 3s;
+            }
+            .target::before {
+                content: "Testo";
+                transition: content 2s; /* non ha senso sul content la transizione*/
+            }
+            .target:hover {
+                background-color: black;
+                width: 600px;
+            }
+            .target:hover::before {
+                content: "Altro testo";
+            }
+    </style>
+</head>
+<body>
+    <h1 class="target">Titolo</h1>
+    <p>Testo della pagina</p>
+    
+</body>
+</html>
