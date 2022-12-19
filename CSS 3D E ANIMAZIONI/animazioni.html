@@ -1,26 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Animazioni</title>
     <style>
         @keyframes AlternateText {
-/* seguranno i punti percentuali di tempoper passare da ogi situazione iniziale
-per arrivare ad una finale */
+            0% {
+                opacity: 1;
+            }
+
+            2% {
+                opacity: 1;
+                transform: scale(2,2);
+            }
+
+            5% {
+                opacity: 1;
+                transform: scale(2,3);
+            }
+
+            17% {
+                opacity: 1;
+                transform: scale(3,2);
+            }
+
+            20% {
+                opacity: 1;
+                transform: scale(1,1);
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        body {
+            font-family: sans-serif;
+            font-size: 3rem;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        main {
+            height: 100vh;
+            text-align: center;
+        }
+
+        #testoAlternato {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1em;
+            border: 5px solid #666;
+        }
+
+        p {
+            text-shadow: 1px 1px 1px rgba(146, 146, 146, 0.8);
+        }
+
+        .parole i {
+            display: inline-block;
+            opacity: 0;
+            color: #6b969d;
+            animation: AlternateText 6s ease-out infinite 0s;
+        }
+        .parole i:nth-child(2) {
+            animation-delay: 2s;
+            color: #6b739d;
+        }
+        .parole i:nth-child(3) {
+            animation-delay: 4s;
+            color: #6b739d;
         }
     </style>
-</head>
+
 <body>
     <main>
-        <div id="testoAlternativo">
+        <div id="testoAlternato">
             <p>
                 Realizziamo con cura, passione
                 <br>
+                attenzione, meticolosità, precisione
+                <br>
+                ed un pizzico di originalità
+                <span class="parole">
+                    <i>interfacce web</i>
+                    <i>single page app</i>
+                    <i>app native</i>
+                </span>
             </p>
         </div>
-        
     </main>
 </body>
+
 </html>
