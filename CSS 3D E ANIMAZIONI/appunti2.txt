@@ -33,3 +33,25 @@ div:hover {
 }
 
 Curve di bezier,proprietà cubic-brezier
+https://blog.jsdisco.dev/cubic-bezier-timing-functions-guide
+Green fish icon editor pro 64-bit (programma)
+@keyfreame è una direttiva che non produce modifiche css macchin
+rende possibile le animazioni tramite punto di partenza e arrivo
+
+@keyframe { deinizionde ll'animazione
+    from { punto di partenza 0% 0}
+    50& {eventuale step intermedio keyfrom selector}
+    to { punto di arrivo to/100%}
+}
+
+.oggetto {
+    nome, durata timing-function-delay, interation-cout, direction, fill mod
+    animation: nome animazione 0.5s cubic-brazier (0.1,0.25,0,1,1)
+    0s infinite alternate both;
+}
+
+Ogni browser prevedere delle determinate specifiche perle animazioniper esempio
+il prefiso -webkit per chrome, safari, i0s, android, ma per il boeser modernio
+il prefisso è inutile perchè utilizzano il webkit
+tranne i browser meno recenti
+prefissi vendor
