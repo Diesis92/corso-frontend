@@ -41,7 +41,29 @@ article:nth-child(5) {
 article:nth-child(3) {
     transform: rotate(100deg);
 }
+ 
+@keyframes evidenzia {
+    50% {
+        transform: scale(2,2);
+    }
+    70% {
+        background-color: blue;
+    }
+    to { 
+        transform: rotate(0deg) scale(1.5, 1.5) ;
+        background-color: blue;
+    }
+}
 
+article:hover {
+    animation-name: evidenzia;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards ; /* stile da applicare all'elemento quando l'animazione finisce*/
+    
+
+}
 
 .primo {
    
