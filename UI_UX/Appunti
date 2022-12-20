@@ -1,0 +1,61 @@
+Un applicazione è un prodotto che viene installato come pagina
+ma che può essere installato in un vero contenitore
+che lo rende fruibile. E' quindi destinato da una platea
+che l'ha scelto
+la intranet aziendale è caratterizzata da un aplatea che ha una serie di strumenti standard per i quali lavora
+La landinga page è la risposta ad un link presente su un altro sito che l'utente ha cliccato 
+il sito web tratta il b2c nella maggior parte dei casi
+Oggi è importante garantire che la ocmunicazione avvenga tramite protocollo HTTPS, La comunicaziome http prevede il traferiemnto di una comunicazione in chiaro, sul canale http viaggia solo testo in chiaro e quindi viaggiano in chiaro anche le info sensibili degli utenti
+il protocollo iso/osi prevede diversi livelli che sono responsabili della protezione di un messaggio
+abbiamo la possibilità di installare sui server web dei firewall
+inoltre una tecnica di protezione è quella che prevede il socket layer
+Un sito che è predisposto per essere utilizzato in maniera agevole per dispositivi mobili, conforta la UI/UX
+un altro aspetto importante è il tempo che il dispositivo impiega per caricare i contenuti
+Evitare il bombardamento di annunci su un sito web
+più sarà efficente e sicuro un sito  più google lo indicizzerà
+la UI cura l'interfaccia utente che implenta all'interno di un'aaplicazione le considerazioni della ux 
+Allinterno della ui abbiamo una serie di aspetti che ganatiscono una ux ottimale a fronte di quelle che sono le info le l'app comunica, per esempio le info del brand e la modialità con la quale esse vengono rappresentate e percepite dall'utente
+Nell'ui quinid è molto importante valutare la scelta di font, colori ect
+i caratteri san serif vengono utilizzati n un testo lungo
+ la coerenza di un brand è l'obiettivo principale in modo tale  che diventi uniformemente espresso  he senz l'ausilio del logo
+ riduzione  minimo di effetti  grafici, forme geometriche, ampi sp  ben definiti e colori  brillanti. NO a sfumature, ombreggiature, pattern grafici e  font serif. 
+ Flat design è un design minimalista contrapposto al moderno design materialista
+ Alberatura del sito
+ il wireframeè un vero e proprio bozzetto grafico del sito, il mockup è il riempimento del bozzetto con info fittizzie per avere un'idea della visualizzazione finale
+
+ c'è un css che rappresneta tutto il sito e poi a scelta si aggiuunge un css aggiuntivo per particolari sezioni
+ scelta del framework
+ wordpress- blog
+ drupal-siti complessi
+ prestashop-
+ Responsive design la pagina si adatta al dispositivo
+ breakpoint---media screen
+ ad ogni breakpoint c'è un mutamento del layout
+ il breakpoint i implementa con le media query che determina le caraterristiche di elmenti sulla pagina proprio tenendo contro dei parametri che impostiamo sul breakpoint
+
+ @media screen and (min-width: 450px) { dimensione minima inferiore di 45o px
+    body {
+        font family:arial;
+    }
+ }
+
+ @media print {
+    body {
+        font family:georgia
+    }
+ }
+
+
+
+ target all tutti i dispo
+ screen per tutti gli schermi
+ print stampanti
+ speech per utenti disabili
+
+img .responsive {
+width 100%
+height: aauto%
+}
+
+si preferisce utilizzare i grid per i form , specie in boostrap
+divideremo le pagine in tante colonne con larghezza minima legata ad una media query

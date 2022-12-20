@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quereis</title>
+    <style>
+        h1 {
+            text-align: left;
+        }
+        
+        p {
+            width: 300px;
+        }
+    
+        
+        @media print {
+            body {
+                font-family: sans-serif;
+                font-size: 3em;
+            }
+            p { display: none;} /* il paragrafo scompare dalla stampa solo grazie a questa media query. Con le media query noi cambiamo l caratteristiche del layou*/
+        }
+
+        @media screen and (min-width:800px){
+            body {
+                width: 80vw;
+                margin: 0 auto;
+            }
+            
+            
+            p {
+                width: 100%;
+            }
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Quidem sunt explicabo deleniti officia vel,
+        harum rerum fugiat mollitia veniam amet nihil a
+        expedita in provident, optio magni voluptates
+        tenetur impedit.
+    </p>
+</body>
+</html>
