@@ -45,4 +45,6 @@ Elementi fixed e sticky
 Fixed è realtiva alla finestra del browser, in manier atale che un elelento è posizonato sempre sulla stessa posizione
 sticky è legato alla viewport vincolandolo allo scrolla del browser
 https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag
- 
+
+z index è un valore relativo agli altri livelli ma si deve sempre accompagnare 
+con il position absolute dell'elemnto che occorre spostare di livello 

@@ -9,12 +9,16 @@ body {
 }
 
 header {
-    border: 1px solid blue;
+    
+    font-family: Merriweather, serif;
+    text-align: center;
 }
 
 nav {
-    border: 1px solid red ;
+    /*usare margin e padding per separare il contenuto dal contenitore e non height in pixel se non sappiamo il valore della viewport*/
+    font-family:  kaushan Script; 
 }
+
 
 main {
     border: 1px solid brown;
@@ -32,7 +36,7 @@ footer {
 
 nav ul li {
     display: inline-block;
-    margin: 3px;
+    margin: 2px;
     padding: 3px 5px;
     box-shadow: -1px 1px 2px gray;
     border-radius: 5px;
@@ -43,4 +47,41 @@ nav ul li:hover {
     background-color: lightgrey;
     transform: translate(-1px,-1px) ;
     box-shadow: none;
+}
+
+nav ul li a:hover {
+    text-decoration:underline
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav {
+    text-align: center; 
+}
+
+article {
+    text-align: justify;
+}
+
+article h1 {
+    font-family: Gill sans;
+}
+
+figure img {
+    margin: 0 auto;
+    display: block;
+}
+
+figure figcaption {
+    margin: 0 auto;
+    display: block;
+    width: 50px;
+    padding: 1em;
+}
+
+
+article figure:nth-child(2){
+   text-align: center;
 }
