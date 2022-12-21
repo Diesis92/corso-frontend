@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Posizionamento</title>
+    <style>
+        body {
+            width: 80vw;
+            margin: 0 auto;
+        }
+
+        header {
+            box-shadow: -2px 2px 4px gray;
+            padding: 2px 5px;
+        }
+
+        nav ul {
+            position: relative;
+        }
+
+        nav ul li {
+            margin-top: 2px;
+            display: block;
+            width: 20%;
+            padding: 1em;
+            position: absolute;
+        }
+
+        nav ul li:hover {
+            background-color: lightgray;
+        }
+
+        nav ul li:nth-child(2) {
+            animation-name: menu;
+            animation-duration: 1s; 
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
+        nav ul li:nth-child(3) {
+            animation-name: menu2;
+            animation-duration: 1s; 
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes menu {
+            from {
+                top: 0px;
+                left: 0px;
+            }
+            50% {
+                background-color: blue;
+            }
+            to {
+                left: 25%;
+            }
+        }
+        @keyframes menu2 {
+            from {
+                top: 0px;
+                left: 0px;
+            }
+            50% {
+                background-color: blue;
+            }
+            to {
+                left: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Titolo</h1>
+        <nav>
+            <ul>
+                <li>Prima Voce</li>
+                <li>Seconda Voce</li>
+                <li>Terza Voce</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

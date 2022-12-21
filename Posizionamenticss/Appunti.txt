@@ -1,0 +1,43 @@
+Float- galleggiare, il floating consente ad un blocco di galleggiare su un lato del contenitore
+parent, in particolare abbiamo la possibilità di prevedere un tag fluttuante
+a sinistra o a destra, quindi l'elemento va ad occupare l'area sinitra e destra ed quindi esca fuori dal ontesto di visualizzaizone
+che è quello fluido standard
+Quando andiamo ad applcare floating left e right, noi facciamo in modo che l'elemnto si posizione
+a sinistra o a detsra del contenitore, per cui,il float gestisce
+una carattteristica che reappresenta sulc omponente sul quale è inserito la necessità
+di farlo fluttuare sui lati, ed il resto del contenuto viene affiancato
+ o a sinistra o a destra a seconda del tipo di float scelto
+
+
+ div p:last-child {
+    cleare: left;
+ }
+
+
+
+
+
+ clear-ripristina il posizionamento a destra  p asinistra o inentrambi i latiin maniera tale
+ che il float continui nel modo standard, e quindi serve per annullare unìimpostazione si floating
+ un elemento scorre intorno all'elemento fluttuante
+
+ posizionamento absolute e relative
+
+ posizionamento static- posizionamento di default
+sono elemente che non influenzano agli posizionamenti
+ 
+ postion relative- relativo agli oggetti circostanti
+è un posizionamento che influenza gli elementi figli in modo tale che il loro posizonamento sia legato al posizionamento dell'emento padre
+
+
+ position absolute- realtivo alla finestra del browser è realtivo ad un contesto ben preciso, in particolare, un posizionamento assoluto fa riferimento alla finestra del browser
+ nel caso in cui l'elemnto nel caso in cui l'emento sia inserito in un emento static,  o padre nel caso in cui il padre abbia un posizionamento relativo
+
+
+L'ordine Z è un aspetto che rapprsenta un livellamento degli
+elementi sulla pagina. OLtre a poter fare rifermento agli spostamenti,
+possiamo far riferimento agli scostamenti dal monitor versi gli utenti
+a rapprsentare una profondità. Viene impostata attraverso unapro
+proprietà Z-index
+z index maggiori coprono z index minori
+ 
