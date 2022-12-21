@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Examples</title>
+    <style>
+        .ball {
+            position: absolute;
+            background-color: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            animation: move 5s linear 0s infinite normal;
+        }
+
+        @keyframes move {
+            0% {
+                top: 10%;
+                left: 10%;
+            }
+
+            25% {
+                top: 10%;
+                left: 90%;
+            }
+
+            50% {
+                top: 90%;
+                left: 90%;
+            }
+
+            75% {
+                top: 90%;
+                left: 10%;
+            }
+
+            100% {
+                top: 10%;
+                left: 10%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div style="position: relative;width: 300px;height: 300px;border: 1px solid">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
