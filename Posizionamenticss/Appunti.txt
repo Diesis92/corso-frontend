@@ -40,4 +40,9 @@ possiamo far riferimento agli scostamenti dal monitor versi gli utenti
 a rapprsentare una profondità. Viene impostata attraverso unapro
 proprietà Z-index
 z index maggiori coprono z index minori
+
+Elementi fixed e sticky
+Fixed è realtiva alla finestra del browser, in manier atale che un elelento è posizonato sempre sulla stessa posizione
+sticky è legato alla viewport vincolandolo allo scrolla del browser
+https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag
  
