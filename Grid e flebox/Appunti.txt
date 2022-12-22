@@ -1,0 +1,36 @@
+prima c'erano tabelle, float opposti, position absolute
+ora flebox
+flexcontainer è determinato dalla presenza di diplaybflex, un container flex ha una disposizione orizzontale e verticale
+e abbiamo due assi che vengono usati per il posizionamento all'interno della pagina
+Con i flexbox possiamo determinare per ognuna degli elemtni al suo inte
+rno la disposizone sia in riga che in colonne
+il wrapping è la modalità in cui gli elemtni vanno a capo se non c'è spazio
+
+
+gli elemtni interni al flebox hanno una proprietà order che determina la loro posizione all'inerno di un particolare
+contenitore
+
+le proprietà che gestiscono il dimensionamento degli elementi sulla paginatutti gli elemnti interni del flexbox soo flessibili, cioè le loro dimensioni variano secondo la finestra parent
+
+media query flex container 
+flex basis- diamo misure relative solo con percentualima questo dipende da quello che si intende fare 
+flex shrink come viene distribuito lo spaizo nel caso in cui il contenitore non ce la fa a contenere i contenuti
+flex grow quanto può crescere in termini di dimensioni quando lo spazio è in eccesso
+
+Grid container che è definit attraverso l'attributo grid per la proprietà display
+all'interno di un container abbiamo le colonne separate dal collum gap
+gli elementi saranno posizionati in griglia 
+
+div.box1 {
+    display:grid
+    grid-collum start: 1;
+    grid-collum end:2;
+}
+
+fr- frazioni-pesi 
+span - colonne di estensione estensione 
+il flebox manda a capo gli elemnti
+invece le grida hanno le positioni degli elementi fissi
+il grid definisce il layout 
+
+
