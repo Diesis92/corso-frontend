@@ -7,22 +7,28 @@ body {
 }
 
 nav {
-    text-align: center;
+    display: flex;
     padding: 10px 0;
+    background: linear-gradient(cyan, teal);
 }
 
-nav ul li {
+nav ul li { /* agisce sui contenitori*/
     display: inline;
-    padding: 5px;
+    padding: 5px;  
+    justify-content: center;
+   
 }
 
-nav ul li a {
+nav ul li a { /* agisce sul contenuto*/
     padding: 5px;
-    border: 4px rgb(29, 29, 104) solid;
-    border-radius: 5px;
+    background-color:wheat;
     text-decoration: none;
-    color: black;
-    box-shadow: 5px 5px 3px black;
+    /*color: black;*/
+    box-shadow: 3px 3px 3px black;
+    border: 4px solid white;
+    border-radius: 5px;
+
+   
 }
 
 nav ul li a:hover {
@@ -35,11 +41,13 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(rgb(29, 29, 104), white);
+    background: linear-gradient(#1d1d68, white);
 } 
 
 header h1 { 
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
     font-size: 4em;
     display: inline-block;
 }
@@ -61,23 +69,73 @@ header h1 {
     flex-direction: column(2);
     column-gap: 40px ;
     
+    
 }
 
 .container {
     display: flex;
     flex-direction: column(2);
-    column-gap: 40px ;
+    column-gap: 50px ;
+    white-space: normal;
+   
 }
 
 main {
     border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
 }
+
+.ricerca {
+  display: flex;
+  justify-content: flex-end;
+  margin: 18px auto;
+
+}
+
 
 footer {
     margin-top: 20px;
     padding: 5px;
     border: 2px solid black;
 }
+
+aside {
+    margin: 4px;
+    padding: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+footer {
+    border: 2px solid red;
+    background-color: black;
+    padding: 10px 0px 15px;
+}
+
+.loghi , .tag {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    justify-items: auto;
+    padding: 10px, 10px, 10px;
+    margin: auto;
+    color: white;
+    background-color: black;
+}
+
+.tag {
+    border: 2px solid blue;
+    padding: 1px;
+    margin: -20px auto;
+
+}
+
+.copy {
+    border: 2px solid white;
+}
+
 
 @media screen and (max-width: 480px) {
     body {
