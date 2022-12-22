@@ -64,15 +64,14 @@ header h1 {
 
 .colonne {
   display: flex;
-  flex-direction: column(2);
+  
   column-gap: 40px;
 }
 
 .container {
   display: flex;
-  flex-direction: column(2);
   column-gap: 50px;
-  white-space: normal;
+ 
 }
 
 main {
@@ -90,13 +89,10 @@ main {
 
 footer {
   margin-top: 20px;
-  padding: 5px;
-  border: 2px solid black;
 }
 
 aside {
   margin: 4px;
-  padding: auto;
   border: 2px solid black;
   border-radius: 10px;
 }
