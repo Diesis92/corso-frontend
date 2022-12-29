@@ -25,43 +25,17 @@ body {
 .header {
   grid-column-start: 1;
   grid-column-end: 4;
-  display: flex;
-
-}
-
-.header :nth-child(3) {
-  width: 125px;
-  height: 50px;
-  
-}
-
-div.header h1:nth-child(1) {
-  color: blueviolet;
-  border: 1px solid #000;
-  padding: 0px;
-  margin-top: 2px;
-  font-weight: bold;
-  
- 
-
-}
-
-div.header h2:nth-child(2) {
-  color: blueviolet;
-  justify-content: flex-end;
-  border: 1px solid #000;
-  padding-top: 32px;
-  margin: 5px
+  background-color: chocolate;
 }
 
 .nav {
   grid-column-start: 1;
   grid-column-end: 4;
+  display: flex;
+  flex-direction: row;
+
 }
 
-h2 {
-  flex-direction: column;
-}
 .main {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -72,16 +46,38 @@ h2 {
 .aside1 {
   grid-column-start: 3;
   grid-column-end: 4;
-  /*height: 172.75px;*/
 }
 
 .aside2 {
   grid-column-start: 3;
   grid-column-end: 4;
-  /*height: 172.75px;*/
 }
 
 .footer {
   grid-column-start: 1;
   grid-column-end: 4;
+}
+
+
+h1{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 100px;
+  border: 1px solid #000;
+ 
+  background-color: blueviolet;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0px;
 }
