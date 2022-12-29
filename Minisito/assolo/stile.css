@@ -42,13 +42,13 @@ body {
 .aside1 {
     grid-column-start: 3;
     grid-column-end: 4;
-    height: 118.75px;
+    height: 172.75px;
 }
 
 .aside2 {
     grid-column-start: 3;
     grid-column-end: 4;
-    height: 118.75px;
+    height: 172.75px;
 }
 
 .footer {
