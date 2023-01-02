@@ -15,36 +15,45 @@ body {
   gap: 10px;
   padding: 10px;
   box-sizing: border-box;
-
 }
 
 .container div {
   padding: 5px;
   border: 1px solid #000;
-  border-radius: 5px;
-  width: 100%;
 }
 
-.header {
+.header  {
+  
   grid-column-start: 1;
   grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
   background-color: chocolate;
-  display: inline-block
-  justify-content: center;
   
 }
 
-.nav {
+.nav  {
   grid-column-start: 1;
   grid-column-end: 4;
-  
+  position: sticky;
+  background-color: chartreuse;
+  text-align: center ;
+  padding: 10px;
+  border-bottom: 1px solid #000;
 }
 
-.main {
+.main  {
+  
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 5;
+}
+
+
+
+article h3 {
+  font-weight: bolder;
 }
 
 .aside1 {
@@ -71,7 +80,7 @@ h1 {
 h2 {
   background-color: aqua;
   padding: 0 auto;
-  margin: 15px;
+ 
 }
 
 img {
@@ -79,9 +88,26 @@ img {
   border: 1px solid #000;
   display: inline-block;
   background-color: blueviolet;
+  position: relative;
+  right: 0px;
+  bottom: 0px;
 }
 
-nav ul li a {
-  display: flex;
-  flex-direction: row;
+ ul li {
+  display: inline-block;
+  margin-left: 30px;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;;
+  font-size: 1em;
+  word-spacing: 0.2em;
+  background-color: darkgoldenrod;
 }
+
+ul li a {
+  text-decoration: none;
+ 
+}
+ 
