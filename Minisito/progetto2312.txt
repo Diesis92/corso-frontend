@@ -81,5 +81,5 @@ Righe tabella: #d2dce7
 Footer: rgb(238, 238, 238);
 Bordi e ombre:
 
-Header: box shadow #d3d3d3;
+Header: box shadow: #d3d3d3;
 
