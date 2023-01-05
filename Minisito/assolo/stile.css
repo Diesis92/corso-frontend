@@ -67,8 +67,10 @@ body {
 }
 
 .testo {
-  text-align: justify;
-  margin-left: 15px;
+  text-align:justify;
+  margin-left: 38px;
+  margin-right: 38px;
+  transform: translateY(20px);
 }
 
 .titolo {
@@ -76,6 +78,7 @@ body {
   margin-top: 75px;
   color: red;
   line-height: 50px;
+  text-shadow: -1px 0 #ffffff, 0 1px #FF0000, 1px 0 #FF0000, 0 -1px #FF0000;
   
   
   font-weight: bold;
@@ -92,9 +95,11 @@ h3 {
 }
 
 .art2 {
-  width: 100%;
-  height: 35%;
+  width: 348px;
+  height: 198px;
   transform: translateY(-363px);
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .aside2 {
@@ -116,11 +121,7 @@ h1 {
   font-size:4rem; 
 }
 
-span {
-  font-size: 3.5rem;
-  text-align: center;
-  align-content: center;
-}
+
 
 h2 {
   transform: translateY(-260%);
@@ -131,8 +132,8 @@ h2 {
 .art {
   width: 90%;
   height: 90%;
-  top: 50px;
-  margin-left: 15px;
+  top: 40px;
+  margin-left: 38px;
   transform: translateX(-1px);
 
 }
@@ -185,8 +186,17 @@ li:hover {
 }
 
 .button {
- 
-  background-color: #0c0633;
+  font-size: 3.5rem;
+  margin-bottom: 18px;
+  color: #0c0633;
+  box-shadow: 2px 2px 2px rgb(55, 52, 52);
+}
+
+.button2 {
+  font-size: 3.5rem;
+  margin-top: 45px;
+  color: #0c0633;
+  box-shadow: 2px 2px 2px rgb(55, 52, 52);
 }
 
 .ricerca {
@@ -201,8 +211,19 @@ textarea {
   resize: none;
 }
 
+.motto {
+  transform: translateY(40px);
+  color: crimson;
+  text-shadow: 2px 2px 2px #d3d3d3;
+}
+
+.aside1 :nth-child(2) {
+  transform: translateY(20px);
+}
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
   body {
     background-color: orange;
   }
 }
+
