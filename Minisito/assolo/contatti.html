@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/Minisito/assets/challenge.png" alt="">
+            <h1>Html Challenge</h1>
+            <h2>Formazione Web Developer</h2>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="/Minisito/assolo/home.html">Home</a></li>
+                <li><a href="/Minisito/assolo/chi siamo.html">Chi siamo</a></li>
+                <li><a href="/Minisito/assolo/contatti.html">Contatti</a></li>
+
+                <form class="ricerca" name="ricerca" method="post" action="/search">
+
+                    <input type="search" autocomplete="on" placeholder="cerca" name="keyword" required maxlength="50">
+
+                    <input type="submit" value="Ricerca">
+                </form>
+
+        </div>
+        <div class="main">
+            <article>
+                <h1 class="lavora">Lavora con noi</h1>
+                <img class="we" src="/Minisito/assets/lavora.jpg" alt="">
+
+                <p class="candidatura">Per poterti candidare ad un ruolo da docente invia il tuo C.V.</p>
+                <div class="CV">
+                    <legend>Invia il tuo CV</legend>
+                    <input name="filename" type="file" />
+                </div>
+
+                <h1 class="caption">Contatti</h1>
+                <table>
+
+                    <tbody>
+                        <tr>
+                            <td>Sede formativa</td>
+                            <td>00100 Roma (RM)</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>wearecoder@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Telefono</td>
+                            <td>123456789</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+        <!--<div class="aside1">
+      
+     
+      
+    </div>
+    <div class="aside2">
+     
+    </div>-->
+        <div class="footer">
+            <p>Copyright &copy; 2021 HTML CHALLENGE</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -12,6 +12,7 @@ body {
   font-size: 1.5rem;
   font-family: Fira Sans;
   line-height: 1.8;
+  overflow-x: hidden;
 }
 
 .container {
@@ -213,10 +214,12 @@ li:hover {
 :hover
 .ricerca {
   width: 350px;
-  display: inline-block;
+  display: inline;
+  margin-left: 640px;
   color: black ;
-  justify-content: right;
-  margin-left: 540px;
+  
+  
+  
 }
 
 textarea {
@@ -297,7 +300,64 @@ textarea {
   text-align: justify;
 }
 
+.caption{
+  border: rgb(255, 255, 255) 2px solid;
+  transform: translateY(-180px);
+  margin-left: 602px;
+  margin-right: 602px;
+  display: inline-block;
+  font-size: 4rem;
+  text-align: center;
+}
+td, tr {
+  padding: 5px;
+  border: #000 2px solid;
+}
 
+table { 
+  text-align: left;
+  font-size: 3rem;
+  color: black;
+  
+  
+  background-color: #d3d3d3;
+  transform: translateY(-160px);
+  margin: 0px auto;
+ 
+  
+   }
+
+.we {
+  width:75% ;
+  height:75% ;
+  margin-top: 160px;
+  margin-left: 298.85px;
+  margin-right: 298.85px;
+  
+}
+
+.lavora {
+  
+  margin: 120px auto;
+  margin-left: 340px;
+  border: 2px solid white;
+  
+}
+
+.candidatura {
+  margin: 0 auto;
+  transform: translateY(-230px);
+  margin-left: 340px;
+  
+}
+
+.CV {
+  border: 2px solid white;
+  display: inline-block;
+  transform: translateY(-190px);
+  margin-left: 548px;
+  margin-right: 548px;
+}
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
   body {
