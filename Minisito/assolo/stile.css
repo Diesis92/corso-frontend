@@ -198,10 +198,9 @@ li:hover {
 }
 
 .ricerca {
-  width: 350px;
-  display: inline;
-  margin-left: 640px;
-  color: black ; 
+  color: black ;
+  margin-left: 980px;
+  transform: translateY(-60px);
   
 }
 
