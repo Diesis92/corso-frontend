@@ -1,0 +1,24 @@
+Framework rileva una serie di elementi preconfezionati 
+è un'infrastruttura dalla quale non èpossibile prescindere
+Un libreria è un'insieme di elementi che noi possiamo scegliere quali e quanti utilizzarli in un determinato momento
+con un framework siao obbligati ad utlizzare libreriaistruzioni così come lo svilupatore ce li ha messe a disposizione
+boostrap è una casa prefabricata 
+plugin boostrap jquery
+content delivery network usato come collegamento
+href CDN
+link rel css caricamento css
+script per l'interazione
+è meglio creare delle nostre classi che vadano a modificare quelle preimpostate
+inve di modificarle direttamente
+rem dimensione percenuale rispetto all'emento radice
+to e left posizionamento assoluto
+il margin è un posizionamento relativo
+il posizonamento assoluto va evitato
+md media query bootstrap 
+npm parcke manager node js 
+bootsrap min e bundle min css per quando si scarica boostrap 
+sticky mette in alto il contenitore solo se esso andrebbe fuori dalla visualizzaizone
+cosa opposta è il fixed 
+la parte comune va in un css nostro a porta 
+e la parte accessoria va con bootstrap ùtrasposizone di propreità css in classi 
+top, left ect vanno usati con il position relative

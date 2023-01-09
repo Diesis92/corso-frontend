@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Examples</title>
+    <meta name='viewport'
+        content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        .bg-custom {
+            background-color: blueviolet;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome in Bootstrap</h1>
+    <p class="h1">Welcome in Bootstrap</p>
+    <p class="display-1">Welcome in Bootstrap</p>
+    <p class="display-2">Welcome in Bootstrap</p>
+    <p class="display-3">Welcome in Bootstrap</p>
+
+    <p class="text-muted">Testo "muto"</p>
+    <p class="text-body bg-danger">Testo standard del body</p>
+    <p class="text-danger d-inline-block">Testo per segnalazione di errori</p>
+    <p class="text-warning">Testo per avvisi</p>
+    <p class="text-success mt-0 mb-5 ms-5">Testo per segnalazione di operazioni andate <mark>a buon fine</mark></p>
+    <p class="text-info bg-custom m-5 p-5">Testo per informazioni di carattere <em>generale</em></p>
+    <p class="text-primary text-center">Testo per informazioni <strong>importanti</strong></p>
+    <p class="text-secondary text-end me-5">Testo per informazioni di secondaria importanza</p>
+    <a href="#" class="link-danger bg-warning">Link di tipo danger</a>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(".text-success").click(function () {
+                $(this).toggleClass("bg-danger")
+            })
+        })
+    </script>
+</body>
+
+</html>

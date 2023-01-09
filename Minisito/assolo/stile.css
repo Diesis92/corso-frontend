@@ -16,8 +16,8 @@ body {
 }
 
 .container {
-  width: 100%vw;
-  height: 100%vh;
+  /*width: 100%vw;
+  height: 100%vh;*/
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 150px 80px 2fr 1fr;
@@ -35,7 +35,7 @@ body {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
-  grid-row-end: 1;
+  grid-row-end: 2;
   box-shadow:4px 4px  solid #d3d3d3; 
   background-color: white;
   color: black;
@@ -57,7 +57,7 @@ body {
   text-align: center;
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 3;
+  grid-row-start:3;
   grid-row-end: 5;
 }
 
@@ -65,11 +65,11 @@ body {
   text-align:justify;
   margin-left: 38px;
   margin-right: 38px;
-  transform: translateY(20px);
+  /*transform: translateY(20px);*/
 }
 
 .titolo {
-  transform: translateY(2px);
+  /*transform: translateY(2px);*/
   margin-top: 75px;
   color: red;
   line-height: 50px;
@@ -128,7 +128,8 @@ h2 {
   height: 90%;
   top: 40px;
   margin-left: 38px;
-  transform: translateX(-1px);
+  /*transform: translateX(-1px);*/
+  display: inline-block;
 }
 
 h1,
@@ -200,7 +201,7 @@ li:hover {
 .ricerca {
   color: black ;
   margin-left: 980px;
-  transform: translateY(-60px);
+  transform: translateY(-600px);
   
 }
 
