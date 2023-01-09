@@ -1,0 +1,122 @@
+/*h1 {
+    background-color: cadetblue ; /*h1 sono elementi in blocco. Quest'ultimi si prendono tutta la riga
+    border: 2px solid black ; 
+}*/
+
+/*span {
+    background-color: darkgoldenrod;  /* gli span sono elmenti in linea. Quest'ultimi si prendere solo lo spazio che occupano effettivamente 
+    border: 2px solid black ;
+}*/
+
+/*i display di default dei singoli ta possono essere modificati- Guardare esempio successivo mettendo commentato il primo esempio*/
+
+/*h1 {
+    background-color: cadetblue ;
+    border: 2px solid black ;
+    display: inline;
+}
+
+span {
+    background-color: darkgoldenrod;
+    border: 2px solid black ;
+    display: block;
+    
+}*/
+
+/*span {
+  background-color: rgb(183, 239, 183);
+  border: 2px solid black;
+  /*width: 100px;
+    height: 50px;
+    padding: 30px; impossibile modificare gli elemnti in linea come se fossero elementi a scatola ed ottenere dei risualtati accettabili
+  display: inline-block; /*inline-block,ovvero elemento in linea con alcune caratteristiche del display block
+  width: 100px;
+  height: 50px;
+  padding: 30px;*/
+  /*display: none; fa sparire lo span anche se presente dell'html. Il none è utilizzato in JS quando dobbiamo far apparire e scomparire elementi
+}
+
+/*div {
+    height:100px ;
+    width:100px ;
+    background-color: darkgoldenrod;
+    border: 2px solid black ;
+    /*i div sono di default  in display block
+}*/
+
+/*div {
+  height: 100px;
+  width: 100px;
+  background-color: darkgoldenrod;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 20px;
+  /*Applichiamo un display inline block per averli affiancati. A differenza della disposizione in blocco, i div in questo caso vengono trattati come fosse testo pertanto
+    si crea uno spazio tra loro. Questo spazio è dato dalla grandezza del font
+}*/
+
+/*body {
+    font-size: 0; se azzeriamo il font
+    azzeriamo anche lo stacco dei div in inline-block o possiamo controllare lo stacco dei div grazie al margin 
+}*/
+
+/*.box {
+    background-color: #efefef;
+    border-bottom: 2px solid #040404;
+    width: 20%;
+    display: inline;
+}
+
+.box-blue{
+    background-color: lightblue;
+    
+}
+
+.box-red {
+    background-color: red ;
+}
+
+.box-purple {
+    background-color: purple;
+}
+
+.box-orange {
+    background-color: orange;
+}*/
+
+/*----------------------------------------------------------------*/
+
+
+.box {
+    background-color: #efefef;
+    border-bottom: 2px solid #040404;
+    width: 100px;
+    height: 50px;
+    /*width: 20%;*/
+    /*display: inline-block; sfrutta i vantaggi di entrambi i display inline e block. Con inline-block puoi settare width e height cosa che non possiamo fare negli elementi inline
+    e puoi anche posizonarlo uno accanto all'altro cosa che invece non possiamo fare con gli elementi
+    in blocco*/
+}
+
+.box-blue{
+    background-color: lightblue;
+    
+}
+
+.box-red {
+    background-color: red ;
+}
+
+.box-purple {
+    background-color: purple;
+}
+
+.box-orange {
+    background-color: orange;
+}
+
+.container {
+    display: inline-flex;
+    background-color: gray;
+    /* il flex mette gli elementi del div container uno accanto all'altro.*/
+}
