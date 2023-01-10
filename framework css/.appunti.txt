@@ -1,0 +1,104 @@
+Framework rileva una serie di elementi preconfezionati 
+è un'infrastruttura dalla quale non èpossibile prescindere
+Un libreria è un'insieme di elementi che noi possiamo scegliere quali e quanti utilizzarli in un determinato momento
+con un framework siao obbligati ad utlizzare libreriaistruzioni così come lo svilupatore ce li ha messe a disposizione
+boostrap è una casa prefabricata 
+plugin boostrap jquery
+content delivery network usato come collegamento
+href CDN
+link rel css caricamento css
+script per l'interazione
+è meglio creare delle nostre classi che vadano a modificare quelle preimpostate
+inve di modificarle direttamente
+rem dimensione percenuale rispetto all'emento radice
+to e left posizionamento assoluto
+il margin è un posizionamento relativo
+il posizonamento assoluto va evitato
+md media query bootstrap 
+npm parcke manager node js 
+bootsrap min e bundle min css per quando si scarica boostrap 
+sticky mette in alto il contenitore solo se esso andrebbe fuori dalla visualizzaizone
+cosa opposta è il fixed 
+la parte comune va in un css nostro a porta 
+e la parte accessoria va con bootstrap ùtrasposizone di propreità css in classi 
+top, left ect vanno usati con il position relative
+
+
+Accessibilità, attributo roll che determina er i browser la possibilità di collocare un determinato tag
+bootstrap ci consente di formattare la nav attraverso dei tag resposnsive attraverso classi associati al tag nav la classe ofndamentale è navbar
+è necessario definire quando la barra deve evisualizzata per esteso o in mniaer concisa e occupare meno spazio
+in particolare con la classe che si occupa di espandere o collassare la barra di navigazione in maniera resposnsive attraverse è navbar-expander
+le classi scritte in questo modo vengono pensate come delle stringhe separate dal trattino
+solo se esse sono comoposte da più parole 
+Breakpoint bootstrap 
+le navar sono resposnsive e fluenti e sono gestire con JS con lo <script> inziale che carichiamo in CSS     
+</script> lo script è js collapse
+il javascript inlcuso consente di avere anche dinamicità all'interno del sito 
+due classi che stanno insieme sno classi diverse che collaborano alla presentazione di un dterminato tag
+data - attributo JS 
+
+data -bs- toggle 
+
+aria - lementi che concorrono alla gestione del men 
+
+accordion serve per la nav in laterale verticale
+attenzione: nella slide relative agli elementi di layout i codici sono validi per bootstrap 4, quindi un po' deprecati
+navtabs per un menù che usufruisca di schede tab , tipo linguette che sono legate a 
+pagine diverse
+breadcrumb rappresenta la posizione corrente dell'utente all'interno del sito 
+per la sitemap che presenta i collegamenti della pagina cche evidenzia e orienta il percorso dell'utente 
+validi per la SEO 
+PAGE-ITEM paginazione, si tratta di elenti che servono a legare tra di lor pagine che hanno contenuti correlati tipo risultati di ricerca collegamenti sempre all'interno della stess pagina
+o anche lo scorriemnto di pagine precedente-successiva-ultima o freccette di navigazione 
+tipo icone di un media player, ha senso quando  dobbiamo presnetare un elenco suddiviso in più pagine come la ricerca di google anche se quat'ultimo presenta una navigazione interattiva
+con classe pagination e viene messo anche sotto alle tabelle  
+
+
+Elementi modali si sovrappongono temporanemenete al contenuto del sito e 
+la navigazione può continurae solo se quelle finestre di dilogo modali sono state chiuse
+sono una sorta di fneste di pop up ma che presentano la possibilità di iscriverti alla newsletter con pulsanti di interazione 
+da non confondere con i toat, elementi informativi senza che l'untente possa interagire con essi
+non è possibile avere più finestre modali una interna all'altra. Le finesre modali hanno psizone fissa al centro della oagina
+le finestre modali si mettoono prima del body e sono  marcati d aun div con classe modal 
+all'interno di class modal c'è un altro div con classe modal-dialog che rappresentazion il contenuto della finetsra
+e all'interno di esso c'è un altro div modal header, modali body e footer non necessariamnete presneti tutti
+all'interno dell'header cè il titolo ed un eventale pulsante che servirà per chiudere la fnestra 
+ovvero"btn-close" data -bs- toggle avvia la finestra modale e data -bs- target l'id della finestra modale
+
+le immagini sono degli elelemmtni complessi perché spesso soo oggetto di modifiche all UI 
+Possono essere responsive scalando le proprie dimensioni 
+img-fluid immagine resposnsive arriavdno alla dimensione massima del contenitore rispettando in altezza le proporzioni
+
+
+Form , gli imput vengono gestiti tramite form control 
+checkbox valori di vero o falso 
+groupt input estensioni controlli form bootsrap
+Tooltip suggerimenti testuali interattivi con un po' sdi JS avvisi che vengonovisualizzati come fosse 
+una nuvola a fumetto sopra a dove vogliamo , sono info aggiuntive che visualizzat ciò che è contenuto in bs-title 
+
+carosello info in slide navigabili 
+
+bootstrap ci permette di utilizzare il flex tramite classe .d-flex 
+
+-- doppio trattino variable per creare una proprietà nostra per sostituire 
+un info del css per centralizzare l'utilizzo di dati costanti in una parte di css 
+
+gli attributi data colmano le lacune di html che non sanno utilizzare gli attributi custom 
+con data possiamo creare una lista di attributi perosnalizzati info ad uso e consumo del JS che accederà a quegli elementi 
+ttogle id rapprsenta che deve essere visualizzata o nascosta all'occorrente
+il data è un attributo è quelle che segue è un info gesta da JS
+
+Lo script in coda al body carica in maniera più efficiente la pagina del browser
+
+
+Il container è un div che organizza gli elementi del breakpoint 
+
+carousel-indicators genera tanti bottoni di scorrimento quanti sono le immagini
+che compone il carosello 
+bs-slide-to stabilisce qual è la slide rappresnetata quando clicco sull'elemento
+
+al carosello possiamo aggiungere due button che consentono di navigare avanti indietro
+bs-ride automatizza il carosello senza premere sulle immagini e possiamo anchestabilire un intervallo di tempo 
+
+
+Card si presenta come un box nella quale è possibile mettere un header, body e footer 

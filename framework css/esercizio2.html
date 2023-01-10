@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <title>Examples</title>
+    <meta name='viewport'
+        content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Menu principale di navigazione -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient border border-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#">My Company</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Espandi menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servizi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Chi Siamo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contatti</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main -->
+    <main>
+        <div class="container px-4 px-lg-5">
+            <div class="row my-5">
+                <!-- Informazioni in evidenza -->
+                <!-- Carosello Bootstrap -->
+                <div class="carousel slide" id="vetrina" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#vetrina" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#vetrina" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#vetrina" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img class="d-block w-100"
+                                src="https://www.thecolorapi.com/id?hex=0047AB&format=svg&w=500&h=300">
+                            <div class="carousel-caption">
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, optio. Alias
+                                    rem nulla quibusdam inventore recusandae. Voluptatem, porro. Dignissimos quam soluta
+                                    beatae voluptates possimus debitis error deleniti sit eum placeat.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img class="d-block w-100"
+                                src="https://www.thecolorapi.com/id?hex=005578&format=svg&w=500&h=300">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img class="d-block w-100"
+                                src="https://www.thecolorapi.com/id?hex=657894&format=svg&w=500&h=300">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#vetrina" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#vetrina" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- Elenco di servizi in cards -->
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-header text-center">
+                                <h5 class="card-title">Primo Servizio</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Questo servizio esclusivo della nostra azienda è fornito
+                                    gratuitamente.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#" class="btn btn-sm btn-primary">Approfondisci&hellip;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="https://www.thecolorapi.com/id?hex=657894&format=svg&w=500&h=300"
+                                class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Secondo Servizio</h5>
+                                <p class="card-text">Questo servizio esclusivo della nostra azienda è fornito
+                                    gratuitamente.</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#" class="btn btn-sm btn-primary">Ancora&hellip;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-header text-center">
+                                <h5 class="card-title">Altri Servizi</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Ecco un elenco di altri servizi:</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Servizio 1</li>
+                                    <li class="list-group-item">Servizio 2</li>
+                                    <li class="list-group-item">Servizio 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-3">
+                <!-- Accordion -->
+                <div class="accordion" id="contatti">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="newsletter">
+                            <button data-bs-target="#form1" data-bs-toggle="collapse" aria-expanded="false"
+                                class="accordion-button" type="button">Iscriviti alla Newsletter</button>
+                        </h2>
+                        <div id="form1" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" required class="form-control" name="email" id="email">
+                                    </div>
+                                    <div class="mb-3 form-check form-switch">
+                                        <input type="checkbox" required name="accept" id="accept"
+                                            class="form-check-input">
+                                        <label for="accept">Accetta le regole sulla privacy</label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <button class="btn btn-primary">Iscriviti</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="scrivi">
+                            <button class="accordion-button" data-bs-target="#form2" data-bs-toggle="collapse"
+                                aria-expanded="false" type="button">Scrivici</button>
+                        </h2>
+                        <div id="form2" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Nome</label>
+                                        <input type="text" required class="form-control" name="name" id="name">
+                                        <label for="surname" class="form-label">Cognome</label>
+                                        <input type="text" required class="form-control" name="surname" id="surname">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <label class="form-label">Sesso:</label>
+                                        <input type="radio" checked name="gender" id="gender_m" class="form-check-radio"
+                                            value="m">
+                                        <label for="gender_m">M</label>
+                                        <input type="radio" name="gender" id="gender_f" class="form-check-radio"
+                                            value="f">
+                                        <label for="gender_f">F</label>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="text">Cosa ci racconti?</label>
+                                        <textarea class="form-control" name="text" id="text"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <button class="btn btn-primary">Scrivici</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Pie' di pagina-->
+    <footer class="bg-dark bg-gradient text-white p-3 mt-3 text-center">
+        &copy; 2023 by Html Challenge!
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</body>
+
+</html>

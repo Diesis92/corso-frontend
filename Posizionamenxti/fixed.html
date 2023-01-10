@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Position: fixed</title>
+    <style>
+        /*Proprio come position: absolute, gli elementi con position: fixed vengono rimossi dal normale flusso del documento.
+         Le differenze sono le seguenti:La loro posizione è relativa al solo documento <html> e non ad altri genitori.
+        La loro posizione non cambia scorrendo la pagina
+        In quest'esempio, ho cambiato la proprietà position dell'elemento arancione in fixed, 
+        quindi adesso si trova a 5px dalla destra dell'elemento <html> e non del suo genitore (container):*
+        Come puoi vedere, lo scorrimento della pagina non influenza la posizione del box arancione, che non è più relativa al suo genitore./
+
+        .container {
+            position: relative;
+            background: lightgray;
+            width: 50%;
+            margin: 0 auto;
+            height: 1000px;
+        }
+
+        .container p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .box-orange {
+            background: orange;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            right: 5px;
+        }
+
+        .box-blue {
+            background: rgb(10, 114, 148);
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-orange"></div>
+        <div class="box-blue"></div>
+        <p>Scroll down the page</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <style>
+        /*position: relative: la nuova posizione dell'elemento viene stabilita rispetto alla sua posizione normale.
+        Partendo da position: relative e per tutti i valori di posizione non statici, 
+        siamo in grado di cambiare la posizione di default di un elemento con le proprietà helper di cui ho parlato prima.
+        Spostiamo l'elemento arancione al fianco del blu.
+        L'elemento arancione è stato spostato in giù e verso destra di 100px, rispetto alla sua posizione normale.
+        Nota: l'uso di position: relative per un elemento, non influenza la posizione degli altri elementi*/
+        .box-orange {
+            position: relative;  /* Adesso possiamo spostare l'elemento*/
+            background: orange;
+            width: 100px;
+            height: 100px;
+            top: 100px;        /*100px dall'alto rispetto alla sua posizione precedente*/
+            left: 100px;       /*100px da sinistra*/
+        }
+
+        .box-blue {
+            background: lightskyblue;
+            height: 100px;
+            width: 100px;
+            position: static;
+            left: 45px;
+            /*Dichiarata come static*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box-orange"></div>
+    <div class="box-blue"></div>
+</body>
+</html>

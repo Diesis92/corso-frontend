@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <style>
+        /*Con position: relative, un elemento viene posizionato rispetto a sé stesso, mentre il valore absolute posiziona 
+        un elemento rispetto al suo elemento genitore.Un elemento con position: absolute viene rimosso dal normale
+        flusso del documento e viene posizionato automaticamente all'inizio (angolo in alto a sinistra) del suo elemento genitore. 
+        Se non possiede un elemento genitore, allora lo sarà l'elemento <html>.
+        Dato che position: absolute rimuove l'elemento dal normale flusso del documento, 
+        gli altri elementi vengono influenzati e si comportano come se l'elemento sia stato completamente rimosso dalla pagina.
+        Aggiungiamo l'elemento container come genitore:*/
+        .box-orange {
+            position: absolute;
+            /*position: absolute sposta l'elemento all'inizio del suo genitore*/
+            background: orange;
+            width: 100px;
+            height: 100px;
+        }
+
+        /*Adesso sembra che l'elemento blu sia scomparso, ma non è così. Si comporta come se l'elemento arancione sia stato rimosso, 
+        quindi si sposta verso l'alto fino alla stessa posizione dell'elemento arancione.Spostiamo l'elemento arancione di 5 pixels.
+        Le coordinate di un elemento impostato con il valore absolute sono relative al suo genitore se anche quest'ultimo ha una posizione non statica. 
+        In caso contrario, le proprietà helper posizioneranno l'elemento rispetto all'elemento <html> iniziale.*/
+
+        .box-orange {
+            position: absolute;
+            background: orange;
+            width: 100px;
+            height: 100px;
+            left: 5px;
+            /*Adesso possiamo vedere l'elemento blu.*/
+            top: 5px;
+        }
+
+
+        .box-blue {
+            background: lightskyblue;
+            height: 100px;
+            width: 100px;
+            position: static;
+            left: 45px;
+            /*Dichiarata come static*/
+        }
+
+
+        .containerdue {
+            position: relative;
+            background: lightgray;
+        }
+
+        .box-orangedue {
+            position: absolute;
+            background: orange;
+            width: 100px;
+            height: 100px;
+            right: 5px;   /*5px rispetto alla destra del genitore*/
+        }
+
+        .container {
+            position: relative;
+            background: lightgray
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-orange"></div>
+        <div class="box-blue"></div>
+    </div>
+
+    <div class="containerdue">
+        <div class="box-orangedue"></div>
+        <div class="box-bluedue"></div>
+    </div>
+</body>
+
+</html>

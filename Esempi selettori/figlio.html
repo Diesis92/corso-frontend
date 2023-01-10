@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ita">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figlio</title>
+    <style>
+        body>p {
+            color: red
+        }
+
+        /*Il selettore di figli (>) consente di selezionare un elemento che è figlio diretto
+         dell'elemento padre.
+         Questo selettore è solo in apparenza simile al selettore di discendenti. 
+         La differenza sta nella relazione di discendenza tra gli elementi,
+          che in questo caso deve essere di primo livello.
+          Dei tre paragrafi solo il primo e il terzo sono figli diretti di body.
+           Il secondo è invece figlio diretto di un elemento div. Tutti e tre, però, 
+           sono discendenti di body.Nel seguente esempio, dunque, solo il primo 
+           e il terzo paragrafo avranno il testo rosso*/
+    </style>
+</head>
+
+<body>
+    <p>Primo paragrafo</p>
+    <div>
+        <p>Secondo paragrafo</p>
+    </div>
+    <p>Terzo paragrafo</p>
+</body>
+
+</html>

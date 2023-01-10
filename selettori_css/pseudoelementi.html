@@ -9,31 +9,59 @@
 
         div:first {
             font-weight: bold;
+            
         }
         p:first-child {
             background-color: yellow;
+            
         }
 
-        div :first-of-type {
+        /*div :first-of-type {
             background-color: green;
-        }
+        }*/
 
-        p:last-child {
+        /*p:last-child {
             background-color: aqua;
-        }
+        }*/
+        
 
         div:last-of-type {
             border: 1px solid blueviolet;
         }
+
+        .ciao h2:nth-child(2) {
+            background-color: coral;
+        }
+
+        tr:nth-child(4) td { background-color: yellow; }
+        tr td { background-color: #DBEEF4; }
+tr:nth-child(odd) td { background-color: #EDF6FB; }
     </style>
 </head>
 <body>
-    <p>Primo paragrafo</p>
+    <!--<p>Primo paragrafo</p>
     <div>Div interno a body </div>
     <p>secondo paragrafo</p>
     <div>
         <p>Primo paragrafo in div </p>
         <p>secondo paragrafo in</p>
-    </div>
+    </div>-->
+
+    <nav>
+        <div class="ciao">
+            <h1>ciao</h1>
+            <h2>pippo</h2>
+            <p>pluto</p>
+        </div>
+    </nav>
+
+    <table>
+        <tr><th>Cognome</th><th>Nome</th><th>Eta</th></tr>
+        <tr><td>Rossi</td><td>Mario</td><td>23</td></tr>
+        <tr><td>Verdi</td><td>Luca</td><td>33</td></tr>
+        <tr><td>Bianchi</td><td>Federica</td><td>24</td></tr>
+        <tr><td>Ferrari</td><td>Luana</td><td>23</td></tr>
+        <tr><td>Esposito</td><td>Giovanni</td><td>43</td></tr>
+      </table>
 </body>
 </html>

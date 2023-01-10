@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ita">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discendente</title>
+    <style>
+        h1+h2 {
+            color: red;
+            text-decoration: underline
+        }
+
+        /* Il selettore di fratelli adiacenti serve a scorrere in orizzontale 
+        l'albero del DOM assegnando le regole CSS agli elementi che si trovano 
+        allo stesso livello di un altro elemento. La relazione si definisce 
+        collegando i due elementi con il segno +.
+        In pratica, questo tipo di selettore consente di assegnare uno stile 
+        all'elemento fratello immediatamente adiacente. 
+        Dato un codice HTML come il seguente: 
+        verrà selezionato solo il primo <h2> dato che è immediatamente 
+        adiacente al tag <h1>. Vediamo l'esempio pratico all'opera.*/
+
+        li + li {margin-left: 10px; color: red}
+        /*Cosa succederà? Il combinatore andrà a selezionare 
+        tutti quegli elementi che sono diretti fratelli del tag li e, 
+        scorrendo in orizzontale l'albero del DOM, 
+        solo il primo <li> non coinciderà con la proprietà.*/
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>1. Questo è il titolo principale.</h1>
+        <h2>1.1 Questo è il primo sottotitolo.</h2>
+        <p>...</p>
+        <h2>1.2 Questo è il secondo sottotitolo.</h2>
+        <p>...</p>
+    </div>
+
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+      </ul>
+</body>
+
+</html>

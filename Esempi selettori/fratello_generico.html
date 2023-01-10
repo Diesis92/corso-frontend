@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ita">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discendente</title>
+    <style>
+        h1 ~ h2 {color: red; text-decoration: underline}
+        /*L'ultimo combinatore (~) è una generalizzazione di quello visto in precedenza. 
+        Esso assegna uno stile a tutti gli elementi che sono fratelli. 
+        Dato il codice HTML visto in precedenza.
+        andremo a selezionare tutti gli elementi <h2> dello stesso livello di <h1>
+        indipendentemente dalla posizione che occupano. */
+        h3 ~ h2 {color: red; text-decoration: underline}
+        /*notiamo che al primo h2 presente nel codice non viene applicato alcuno stile, 
+        mentre a tutti gli altri sì. Questo succede perchè la regola viene assegnata 
+        solo agli elementi che sono fratelli e successori dell'elemento h3.*/
+    </style>
+</head>
+<body>
+    <div>
+        <h1>1. Questo è il titolo principale.</h1>
+        <h2>1.1 Questo è il primo sottotitolo.</h2>
+        <p>...</p>
+        <h2>1.2 Questo è il secondo sottotitolo.</h2>
+        <p>...</p>
+      </div>
+
+      <div>
+        ...
+        <h2>Questo e' un sottotitolo h2</h2>
+        <h3>Questo e' un sottotitolo h3</h3>
+        ...
+        <h2>Questo e' un sottotitolo h2</h2>
+        <h3>Questo e' un sottotitolo h3</h3>
+        ...
+        <h2>Questo e' un sottotitolo h2</h2>
+        <h3>Questo e' un sottotitolo h3</h3>
+      </div>
+</body>
+</html>

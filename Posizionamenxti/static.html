@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static</title>
+    <style>
+        .box-orange {
+            /*senza position dichiarata, ma di default la posizione degli elementi è static*/
+            background: orange;
+            height: 100px;
+            width: 100px;
+            left: 45px;  /*con static non possiamo usare top, left, right e bottom per spostare*/
+        }
+
+        .box-blue {
+            background: lightskyblue;
+            height: 100px;
+            width: 100px;
+            position: static;
+            left: 45px;
+            /*Dichiarata come static*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-orange"></div>
+    <div class="box-blue"></div>
+</body>
+
+</html>

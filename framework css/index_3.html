@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Examples</title>
+    <meta name='viewport'
+        content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+    <!-- collegamento alla parte principale di bootstrap (css) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- collegamento agli script (js) necessari al funzionamento della parte principale di bs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Advanced Bootstrap</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-md bg-primary mb-0 pb-0">
+        <a class="navbar-brand" href="#">HTML!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="menu" aria-label="Espandi/comprimi menu" aria-expanded="true">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav navbar-collapse nav-tabs" id="menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Link 2</a>
+            </li>
+        </ul>
+    </nav>
+    <nav class="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Pagina 1</a></li>
+            <li class="breadcrumb-item"><a href="#">Sottopagina 1</a></li>
+        </ol>
+    </nav>
+    <nav>
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">|&lt;</a></li>
+            <li class="page-item"><a href="#" class="page-link">&lt;</a></li>
+            <li class="page-item"><a href="#" class="page-link">&gt;</a></li>
+            <li class="page-item"><a href="#" class="page-link">&gt;|</a></li>
+        </ul>
+    </nav>
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#my-modal">
+        Apri Finestra
+    </button>
+
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#my-modal">
+        <img src="ascea.jpg" class="img-thumbnail w-25 m-5 p-2 rounded-5">
+    </button>
+
+    <table class="table table-hover table-bordered border-success">
+        <thead>
+            <tr><th>Colonna 1</th><th>Colonna 2</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Riga 1 - Col 1</td><td>Riga 1 - Col 2</td></tr>
+            <tr><td>Riga 2 - Col 1</td><td>Riga 2 - Col 2</td></tr>
+            <tr><td>Riga 3 - Col 1</td><td>Riga 3 - Col 2</td></tr>
+        </tbody>
+    </table>
+
+    <form>
+        <div class="row">
+            <div class="offset-md-2 col-md-2">
+                <label for="name" class="col-form-label">Nome</label>
+            </div>
+            <div class="col-md-5">
+                <input type="text" class="form-control" name="name" id="name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-md-2 col-md-2">
+                <label for="accept" class="col-form-label">Privacy</label>
+            </div>
+            <div class="col-md-5">
+                <input type="checkbox" class="form-check-input" name="accept" id="accept">
+                <label for="accept">Accetta</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-md-2 col-md-2">
+                <label for="gender" class="col-form-label">Sesso</label>
+            </div>
+            <div class="col-md-5">
+                <input type="radio" class="form-check-input" name="gender" id="gender_m" value="m">
+                <label for="accept">Uomo</label>
+                <input type="radio" class="form-check-input" name="gender" id="gender_f" value="f">
+                <label for="accept">Donna</label>
+            </div>
+        </div>
+    </form>
+    <div class="alert alert-info alert-dismissible" id="myalert">Tutto ok!
+        <button class="close btn-close"  data-dismiss="myalert" aria-hidden="true"></button>
+    </div>
+    <div class="alert alert-primary d-flex align-items-center" role="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2 w-25" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+        <div>
+          An example alert with an icon
+        </div>
+      </div>
+    <div class="modal" id="my-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Stupendo!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="ascea.jpg" class="img-fluid mx-auto rounded-5">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,24 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/Grid e flebox/base grid/index2.css">
+  <style>
+    body {
+      margin: 0 auto;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr
+        /*3fr*/
+      ;
+      grid-template-rows: auto;
+      background-color: #2196F3;
+      /*padding: 10px;*/
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .container div {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .header {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      box-shadow: 4px 4px solid #d3d3d3;
+      background-color: white;
+      color: black;
+     
+    }
+
+    .nav {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      position: sticky;
+      top: 0px;
+      left: 0px;
+      z-index: 100;
+      background-color: lightgray;
+      border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .main {
+      text-align: center;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+
+    .aside1 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+
+    .aside2 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+
+    .footer {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 5;
+      grid-row-end: 6;
+    }
+
+    .header img:nth-child(1) {
+      width: 20%;
+      position: absolute;
+      right: 40%;
+    }
+
+
+  </style>
 </head>
+
 <body>
+
+
   <div class="container">
-    <div class="header"> header  
-      <h1>titolo 1</h1>
-      <h2>titolo2</h2>
+    <div class="header">
       <img src="/Minisito/assets/challenge.png" alt="">
+      <h1>Html Challenge</h1>
+      <h2>Formazione Web Developer</h2>
     </div>
     <div class="nav">Nav</div>
     <div class="main">Main</div>
     <div class="aside1">Aside1</div>
-    <div class="aside2">aside2</div>
+    <div class="aside2">Aside2</div>
     <div class="footer">Footer</div>
   </div>
 </body>
+
+</html>
+
 </html>

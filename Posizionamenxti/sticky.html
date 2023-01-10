@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Example Position: sticky</title>
+    <style>
+
+        /*position: sticky può essere spiegata come un mix di position: relative e position: fixed.Fino a un certo punto,
+        l'elemento si comporta come se avesse position: relative, ma poi cambia in position: fixed .
+        Il modo migliore per spiegare position: sticky è con un esempio:
+        IMPORTANTE: position: sticky non è supportata da Internet Explorer e dalle versioni più vecchie di altri browser.
+         Puoi controllare il supporto browser su caniuse.com.*/
+        .container {
+            position: relative;
+            background: lightgray;
+            width: 50%;
+            margin: 0 auto;
+            height: 1000px;
+        }
+
+        .container p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .box-orange {
+            background: orange;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            right: 5px;
+        }
+
+        .box-blue {
+            background: lightblue;
+            width: 100px;
+            height: 100px;
+        }
+
+        .sticky {
+            position: sticky;
+            background: red;
+            top: 0;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-orange"></div>
+        <div class="box-blue"></div>
+        <p>Scroll down the page</p>
+        <p class="sticky">I am sticky</p>
+    </div>
+</body>
+
+</html>
+
+Run Pen
