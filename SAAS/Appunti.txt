@@ -1,0 +1,125 @@
+Mai usare misure assolute tipo pixel ma hanno senso solo con le media query, le dimensioni fisse non cambiano quindi al cambiare dei dispositivi
+In bootstrap i valori in pixel sono per gli schermi più grandi 
+Le percentuali sono valori più indicati 
+Saas cipermetterà di importare un foglio di stile in un altro per poterlo utilizzare 
+per poterlo utilizzare dovremmo far riscorso a node.js  che prevede una fase di automazione 
+ci vuole un componente sul pc che rende disponibile un web  server che risponde al browser 
+invianodlgi l'html 
+Il saas è una tecnologia che viene presentato col motto è il css coi superpoteri
+il css è statico, non riutilizzabile se non ricompindolo e riscrivendolo nello stesso modo ovunque server
+in informatica uno dei concetti più importanti è il riutilizzo
+che non significa copia incolla, ma possiamo riutilizzarla senza toglierla
+dalla propria fonte senza quindi prenderla e incollarla da qualche Partendo
+nella produzione di un app noi ci troviamo di fronte ad un mondo in cui prima di mettere a disposizone il prodootto
+esso deve essere sottoposto a test
+una volta fatto il test ogni modifica deve essere di nuovo 
+messa sotto test e se è buona non la dobbiamo più modificare
+altrimenti il suo ciclo vitale viene riperorso a ritroso
+il riutilizzo è un concetto che ci consente di avere 
+una scatola chiusa che continene degli lelemnti che noi possiamo utilizzare senzaconoscerli
+Questa tecnologia che rende disponibile la possibile di riutilizzare css ma
+ma nn è css ma un saas che lo trafsormi in css e abbimao bisgnod di un tool 
+strutture di programmazione sono degli elementi operativ che trasformano un dato secondo delle regole di come quel dTto deve essere trasformato
+in saas vemgono trasformati in test 
+
+Sintassi curly con parentesi graffe per determinate le proprietàe un '
+un altrà è l'indentazione per definire dei blocchi
+la sintassi senza parentesi graffe dovremmo avere come estensione del file. scdd
+che è molto vicina al css standard
+saas ci consente di accostare delle costanti con un simbolo del dollaro
+e possiamo utlizzare in sua vece proprio il suo nome della costante 
+scss parentesi graffe
+sass no parentesi graffe 
+il file devono essere interpretati dal browser 
+per usarlo dobbiamo installare node e npm che hanno in sè delle librerie
+che consentono di leggere saas e convertilo
+chocoolatey è un tool di gestione di pacchage dentro pyton anche se nell'istallazione
+di node poteva essere evitato di scaricarlo 
+powershall nuovo ambiente comand line che da la possiblità di aggiungere script alla macchina
+per funzionalità complesse a differenza del proompt dei comandi CMD che si basa sul Mdos 
+pathe è un elemento di sistema che rende globale i file all'interno del pc che sono 
+all'innterno di un unità per esempio C, se all'interno del path andiamo ad inserire 
+l'informazione path è una sequenza di tante cartelle che raccontano tutte le cartelleevitabili di scriverle
+se all'inerno del temrinale CMD scriviamo path leggo il valore della variabie di ambienteche possiamo
+evitare di scrivere se devo accedere ad un eseguibile di questi 
+dalle proprietà di sistema  
+il parcarge manager installa delle librerie che sono contenute in un
+repository remoto che NPM si scarica 
+sul terminale npm initi crea un file di configurazione per le caratteristiche del progetto
+ESSO scaricherà il pacchetto package.json 
+npm install node-sass --save per installare la libreria sass
+
+live server pacchetto di utilità che sreve a rendere disponibile
+un indirizzo ip per visualizzare quello a cui stiamo lavorando installando con npm install live-server -g
+se il dowload scarica le vunerabilità sono solo rischi legati alla sicurezza ma tanto sta sulla nostra macchina per cui don't worry!
+anche se bastava scaricare il processore node-sass (vedi cartella node_modules, c'è una sotto cartella node-sass)
+il Mac è la versione Custom di Linux per questo hanno il terminale simile
+l'ambiente di sviluppo in sass è pronto!
+UN FILE SAAS è identico ad un file CSS. La prima differenza rispetto al css
+è che quello che nel css è costante, nel saaas può essere mantenuto
+all'interno di elementi che prendono il nome di variabile
+concetto strettamente legato alla programmazione
+random access memory: Ram legato al concetto di variabile che rappresentano
+delle info che intendiamo memorizzare nella memoria della macchina che occorre
+assegnare un nome per poterle riutilizzare, la variabile consenste
+di memorizzare un info all'interno della memoria di una macchina
+e per poterlo recupare abbiamo bisogno che di assegnare alla 
+variabile un nome. Le variabile del saas sono precedute da simbolo del dollaro
+Una volta scelto il nome co i due punti diciamo al sistema
+che deve essere valutato ciò che sta alla detsra dei due punti
+e il risultato deve essere salvato su ciò che sta a sinistra dei due punti 
+una volta che assegniamo il nome di una variabile non possiamo più assegnarle un nuovo nome 
+quindi sono anche chiamate costanti eprché il valore assegnato non cambia nel tempo
+ma non sono propriamente costanti perché possono camnbiare in presenza di una media query
+invece di usare la specificità di quella variabile ma solo il suo nome
+con il vantaggio di non ricordarci tale valore e se dobbiamo riutlizzare tale valore
+ci basterà ricordare il nome, e se invece vogliamo cambiare valore alla variabile
+possiamo cambiarla solo dal file principale.
+La variabile è un nome che fa riferimento ad una scatolina che a seconda di ciò che dobbimao mettere in una scatola , ci servirà una scatola grande
+la variabile è legata ad un dominio alla qualità e quantità di info che essa deve mantenere
+il dominio è detto tipo di dato che può fare riferimento a numeri, stringhe, colori, liste di valori array, booleni, null, mappe con coppie chiave/valore
+
+I dati che fanno riferimentore al mondo booleano confrontano 
+disuguaglianze. Si confrontano informaizoni o si fanno calcoli
+possiamo fare dei test di uguaglianza e disuguaglianze
+per scrivere delle frasi per dire se quello è così fai quello altrimenti fai quest'altro
+
+Possiamo fare operazioni artimetiche tra unità di misura diverse 
+e il risultato 
+and mette in relazione due booleani in false
+or in true 
+in generale si hanno tanti saas che insieme costituiscono un unico css 
+Nel link rel del html si deve mettere sempre un file css perché il saas non lo leggerebbe
+per farlo vedere doppiamo effettuare un operazione di compilazione attraverso uno strumento
+che è il compilatore che è stato installato con node.js  Node-sass -->  Bin che consentono di effettuare l'operazione 
+ 
+ Live saas complier watch è l'estensione che compila per noi il file e con go live possiamo vedere il saas trasposto in css che possiamo spostare nella cartella del css 
+
+
+ Partials sono degli elmenti che ci consentono di suddividere file in più parti per avere file più piccoli su cui lavorare
+ ha estensione .scss e il nome del file inizia con underscore ad esempio
+ _header.scss 
+ _footer.scss
+ I file parziali quindi hanno un nome che inizia col trattino e i file sono scritti
+ per essere utilizzati in altri file scss come @import 'nome _del_file_partial';
+
+
+ Il nesting è una caratteristica per qualce noi possiamo definire le regole di formattazione degli elementi seguendo le gerarchie del'html
+
+ esso ci consente di mantenere nel css la stessa struttura gerarchica del html 
+ nel css non esiste il nesting nè il Partial a meno di non utlizzare una sintassi con css3 con una e commerciale prima dell'elemento
+ il nesting non è prassi comune utilizzarla perché è una novità del css3 del2022
+ bootstrap è scritto in saas 
+ il nesting è possibile anche con le pseudo classi &:hover 
+ il nesting su css è possibile con una e commerciale. E' meglio non eccedere con il nesting all'interno del sass 
+
+Quando il digito qualcosa sulla barra del browser, quest'ultimo individua la macchina e manda l'inidizzo al server
+e l'ultima versione ha l'ip . Il browser invia manda info che sono importanti per il server, cioè le intestationi per comunicare col client
+la risposta inizia con HTTP/1.1 200 OK
+il codice di stato. Il server comunica se l'operazione è andata a buon fine attraverso un codice a tre cifre
+se la prima è il 2 è andata a buon fine, se 4, ci sono problemi nel soddisfare la richiesta o l'utente non è autorizzata a riceverlo
+le risposte di tipo 500, il server a riscontrato un errore e non riesce ad elaborare la richiesta 
+pooi ci sono le info di undershering che sono le info del file che invia il client
+subito dopo riga vuota e poi il file vero e proprio 
+
+Programma Telerik fiddler e postman: programmi di analizzatori di richieste cliente to server 

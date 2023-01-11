@@ -1,0 +1,16 @@
+@import 'variables';
+
+.pallina {
+    width: 80vw;
+    height: 80vh;
+    background-color: burlywood;
+
+    .circle {
+        width: $size;
+        height: $size;
+        display: block;
+        text-align: center;
+        background-color: $circle-back;
+        border-radius: $size * .5;
+    }
+}
