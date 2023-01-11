@@ -123,3 +123,18 @@ pooi ci sono le info di undershering che sono le info del file che invia il clie
 subito dopo riga vuota e poi il file vero e proprio 
 
 Programma Telerik fiddler e postman: programmi di analizzatori di richieste cliente to server 
+
+Un file stylecss.map consente al nrowser d ottimizzare la lettura del file css e come esso è stato ottenuto
+
+Si programma usando solo la cartella Root, radice principale del progetto, pertanto pari la bash dalla cartella principale.
+
+Inserire questa stringa nel settng.json dell'estensione per il compilatore sass
+"liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/css"
+        }
+    ]
+
+se sisbaglia a scrivere anche solo una virgola del sass, il file css non viene prodotto 

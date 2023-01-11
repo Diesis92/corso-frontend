@@ -1,13 +1,14 @@
-.pallina {
-  width: 80vw;
-  height: 80vh;
-  background-color: burlywood;
-}
-.pallina .circle {
-  width: 200px;
-  height: 200px;
+@charset "UTF-8";
+.circle {
+  width: 100px;
+  height: 100px;
   display: block;
-  text-align: center;
-  background-color: red;
-  border-radius: 100px;
+  border-radius: 50px;
+  background-color: maroon;
+  font-size: 30px;
+}
+.circle p {
+  display: flex; /* usare il flex perché è un posizionamento relativo, mentre margin top ect sono posizonamenti assoluti*/
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

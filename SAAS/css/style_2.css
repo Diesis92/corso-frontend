@@ -1,0 +1,26 @@
+body {
+    margin: 0 auto;
+}
+
+
+header  {
+    display: flex;
+    background-color: blueviolet;
+    padding: -20%;  
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+ ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    color: white;
+    
+ }
+
+ a{
+    text-decoration: none;
+ }

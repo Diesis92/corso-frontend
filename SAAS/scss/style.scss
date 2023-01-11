@@ -1,16 +1,17 @@
-@import 'variables';
+$size:100px;
+$back-circle: maroon;
 
-.pallina {
-    width: 80vw;
-    height: 80vh;
-    background-color: burlywood;
+.circle {
+    width: $size ;
+    height: $size;
+    display: block;
+    border-radius: $size * .5;
+    background-color: $back-circle;
+    font-size: $size* .3;
 
-    .circle {
-        width: $size;
-        height: $size;
-        display: block;
-        text-align: center;
-        background-color: $circle-back;
-        border-radius: $size * .5;
+    p {
+        display: flex; /* usare il flex perché è un posizionamento relativo, mentre margin top ect sono posizonamenti assoluti*/
+        align-items: center;
+        justify-content: center;  
     }
 }
