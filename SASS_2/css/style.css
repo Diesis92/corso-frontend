@@ -1,0 +1,92 @@
+.esempio {
+  background-color: black;
+  color: yellow;
+}
+.esempio h1 {
+  color: white;
+}
+.esempio p:nth-of-type(1) {
+  color: blue;
+}
+
+.esempio p:nth-of-type(1) {
+  color: blue;
+}
+
+.esempio2 {
+  background-color: black;
+  color: yellow;
+}
+.esempio2 h1 {
+  color: blue;
+}
+
+.esempio3 {
+  /*    width: $ball-size;
+  height: $ball-size;
+  border-radius: $ball-size / 2;
+  display: block;*/
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  display: block;
+  background-color: yellow;
+}
+
+.esempio4 {
+  /*   width: $ball-size;
+  height: $ball-size;
+  border-radius: $ball-size / 2;
+  display: block;*/
+  width: 450px;
+  height: 450px;
+  border-radius: 225px;
+  display: block;
+  background-color: red;
+}
+
+h1 {
+  color: navy;
+  margin-top: 20px;
+  font-family: cursive;
+  font-size: 3.44rem;
+}
+
+p {
+  color: navy;
+  margin-top: 20px;
+  font-family: cursive;
+  font-size: 1.29rem;
+}
+
+.test h1 {
+  font-size: 6em;
+  background-color: blue;
+}
+.test h2 {
+  font-size: 3em;
+  background-color: blue;
+}
+.test h6 {
+  font-size: 2em;
+  background-color: blue;
+}
+
+.sample h2 {
+  font-size: 5em;
+  background-color: blue;
+}
+
+p {
+  /*background-color: red;*/
+  /*@include fmtBack("color", red);*/
+  background-image: radial-gradient(white, black);
+  width: 30px;
+  display: block;
+}
+
+h1 {
+  /*background-image: linear-gradient(white, black);*/
+  /*@include fmtBack("image", linear-gradient(white, black));*/
+  background-color: yellow;
+}/*# sourceMappingURL=style.css.map */

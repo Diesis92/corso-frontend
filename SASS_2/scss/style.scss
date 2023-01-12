@@ -1,0 +1,109 @@
+@import 'vars';
+
+.esempio {
+    background-color: $back;
+    color: $fore;
+
+    h1 {
+        color: $head-fore;
+    }
+
+    p {
+        &:nth-of-type(1) {
+            color: $head-fore-alt;
+        }
+    }
+}
+
+.esempio p {
+    &:nth-of-type(1) {
+        color: $head-fore-alt;
+    }
+}
+
+.esempio2 {
+    background-color: $back;
+    color: $fore;
+
+    h1 {
+        color: $head-fore-alt;
+    }
+}
+
+@mixin ball($size, $scale: 1, $disp: block) {
+    width: $size * $scale;
+    height: $size * $scale;
+    border-radius: ($ball-size * $scale) / 2;
+    display: $disp;
+}
+
+.esempio3 {
+    /*    width: $ball-size;
+    height: $ball-size;
+    border-radius: $ball-size / 2;
+    display: block;*/
+    @include ball($ball-size);
+    background-color: yellow;
+}
+
+.esempio4 {
+    /*   width: $ball-size;
+    height: $ball-size;
+    border-radius: $ball-size / 2;
+    display: block;*/
+    @include ball($ball-size, 3);
+    background-color: red;
+}
+
+@mixin fontChoice($size) {
+    color: navy;
+    margin-top: 20px;
+    font-family: cursive;
+    font-size: $base-font * $size;
+}
+
+h1 {
+    @include fontChoice(4);
+}
+
+p {
+    @include fontChoice(1.5);
+}
+
+@mixin fmtBack($type, $color) {
+    background-#{$type}: $color;
+}
+
+@mixin boo($var, $value) {
+    #{$var}: $value;
+}
+
+@mixin header($size, $textSize) {
+    h#{$size} {
+        font-size: $textSize;
+        background-color: blue;
+    }
+}
+
+.test {
+    @include header(1, 6em);
+    @include header(2, 3em);
+    @include header(6, 2em);
+}
+.sample {
+    @include header(2, 5em);
+}
+
+p {
+    /*background-color: red;*/
+    /*@include fmtBack("color", red);*/
+    @include fmtBack("image", radial-gradient(white, black));
+    @include boo("width", 30px);
+    @include boo("display", block);
+}
+
+h1 {
+    /*background-image: linear-gradient(white, black);*/
+    /*@include fmtBack("image", linear-gradient(white, black));*/
+    @include fmtBack("color", yellow);
+}
