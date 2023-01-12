@@ -138,3 +138,36 @@ Inserire questa stringa nel settng.json dell'estensione per il compilatore sass
     ]
 
 se sisbaglia a scrivere anche solo una virgola del sass, il file css non viene prodotto 
+si usa la e commerciale accanto e prima delle pseudo classi quando si fa  nesting
+Json è il linguaggio che viene usato per le configurazioni
+
+Mixins e interpolazione
+Un mixins consente di memorizzare una parte di codice che può essere riutilizzato in più punti
+attraverso la direttiva @mixins e di riutlizzarla con la direttiva @include 
+il mixin da un nome ad un pezzodi codice 
+l'interpolazione è un concetto per cui all'interno di un contesto viene inserita un'info 
+la possibilità di spezzare in due un contesto e metterci all'interno un'altra info che crea a sua volta un contesto con in fo nuova
+l'interpolazione si ottiene con una coppia di caratteri #{ }
+per sito   
+versione sviluppo con Saas usato in locale 
+pre produzione ai fini di test 
+produzione. prodotto destinato agli utenti
+
+espiration time o date 
+
+le funzioni è un concetto presente nei linguaggi di programmazioni che centralizzano algoritmi
+è un contesto all'interno del quale si fornisce una trasformazione di una nformrmazione
+io mixin prende dei parametri di intro e omposta la struttura d alune proprietàn
+una funziona non va ad impostare delle proprietà ma serve ad effettuare delle elaborazioni che dato un valore in ingresso producono outpot
+una funzione prend ein ngresso dei parametri, effettua delle elaborazioni e fornisce un risualtato che potrà essere tilizzato in un contesto dverso
+saas mette a dsiposizone delel proprie funzioni che svolgono dei comportamenti particolari  (ma anche in css con lienar gradient e radial gradient, url sono funzioni) 
+direttiva @function+nome(elenco parametri) 
+Esistono parametri non è previsto un valore di defalt e non , e se sono presentie ntrambi si predilige prima il valore di defalt e poi quella senza 
+UnA  funzone viene richiamata attraverso il suo nome con il quale viene memorizzata un valore 
+sass continene anche dei moduli che consente di eseguire operazioni più complesse
+sass:math
+sass:color 
+
+l'ereditareità è un concetto che datauna regola consente di utilizzarla così come ed eventualmente modificarne i contenuto 
+@extend è una misura alternativa del mixins co la differenza che quest'ultimi cpiano tutto ma gli extend producono risultati più efifcienti mnimizzano i dati in essere 
+un mixins prevede parametri mentre extend no 
