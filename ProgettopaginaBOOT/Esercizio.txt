@@ -1,0 +1,10 @@
+1.    La navbar i link del menu a destra ed anche le icone di alcuni social network (le icone devono essere di Bootstrap).
+2.    Implementa Bootstrap con un gestore di pacchetti o effettua il download del codice sorgente.
+3.    Crea un file app.scss (o custom.scss) dove importerai gli altri file .scss dipendenti.
+4.    Fai un backup del file _variable.scss di Bootstrap e mettilo nella cartella principale del tuo progetto.
+5.    Crea una funzione in un file scss (denominato _function.scss) che dato un colore di background imposti il colore del testo bianco o nero in funzione della luminosità dello sfondo.
+Suggerimento: puoi partire con un esempio preso dal sito principale di Bootstrap. Come ad esempio https://getbootstrap.com/docs/5.1/examples/sticky-footer-navbar/
+Buon lavoro!
+https://icons.getbootstrap.com/
+https://getbootstrap.com/docs/5.0/extend/icons/
+Per prima cosa scaricare il source dowloand di bootstrap per i scss bootstrap e il dowland normale di boorstrap per avere giàil css compilato 

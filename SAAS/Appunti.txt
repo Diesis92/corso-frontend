@@ -171,3 +171,43 @@ sass:color
 l'ereditareità è un concetto che datauna regola consente di utilizzarla così come ed eventualmente modificarne i contenuto 
 @extend è una misura alternativa del mixins co la differenza che quest'ultimi cpiano tutto ma gli extend producono risultati più efifcienti mnimizzano i dati in essere 
 un mixins prevede parametri mentre extend no 
+
+
+
+1-Iniziare un sito creando le variabili delle palette colori in un file sass 
+2-creare un file sass con le variabili per il font, i colori per lgi stessi 
+3-creare un file sass con le variabili per definire le dimensioni
+per creare un sito quindi, biosgna gare un wireframe, uno studio preliminare dove tutto va scelto a monte
+4- i file con le variabili costituisocno partial che possono essere organizzato come sottocartelle della cartella partial perché possono essere importate come import
+i nomi dei file partial devono avere sempte un underscore all'inidizzo
+i file partial da soli non producono outpot
+5-per importare un font da google, scrivere il nome del font del file delle variabili del font nel font famly.
+Per caricarlo nel css dovremmo scrivere il riferimento al file di google che contiene quel font. Dobbimo mettere l'import del file style.scss
+alla fine l'import di google è anch'egli un css che contiene i parametri del font 
+url è una funzione si sass ma anche di css 
+all'url fontface di ggogle dopo l'uguale, basterà sostituire il nome del font per richiamare quello desiderato. Nelle chiamate gli spazi ra le parole vengono sostituiti con i +
+per importare un altro font, ripetere la procedura sopra 
+quindi alla fine si avranno più import google nella quale l'unica cosa che camnia è il nome del font 
+Poichèho notato che ho rpetuto due volte questa operazione, io posso pensare di trafsormare queste due chiamate in un mixins che si occupin di caricare il font da google andando a sostituire all'interno del link, il nome del font che gli passo
+invece di scrivere tutta quella info, scrivo @include goole-font ("nome font")
+nel mixin scrivo google-font ($nomevariabile)
+e import url google 
+con il concetto di interpolazione possiamo sostituire dopo L'uguale del font di google #{$font-name}
+senza interpolazioni, noi non possiamo usare la variabile per il font che abbiamo scelto
+l'interpolazione dice "in questo punto ci deve essere scritto il nome della variabile"
+
+
+6 il  concetto di interpolazione lo possiamo utlizzare anche per più elementi. Un mixin produce per ognune di degli elemnti per esempio H, un determinato font family
+basta indicare nell'include @include head (1, $head)-font) --questo va nello style.scss
+mentre questa funzione mixin, nel file mixin:
+$level1 è il parametro che produrrà il risultato finale dando ogni volta un valore diverso per level1
+@mixin head ($level, &font) {
+    h#{$level} {
+        font-size: (5-$level) * 1em;
+        font-family:$font;
+    }
+}
+
+n.b. il codice  per live compliers sass  da mettere sul file setting.json  si prende dalla documentazione dell'estensione 
+il lighten prende il colore e lo schiarisce. lighten a differenza di pacity si riferrisce ad una variabile 
+UI uxer esperience 

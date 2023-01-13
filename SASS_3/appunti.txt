@@ -1,0 +1,70 @@
+Il mixin nei linguaggi di programmazione vengono chiamati theat 
+Ordine posizionale e nominale delle informazioni
+usare  i mixin tutte quelle volte in cui un aparte di codice si ripete 
+come sull'import di google font caricando tutti i font che vogliamo specificando solo il nome del font 
+usiamoi mixin per centralizzare una particolare info 
+un mixin prende delle info e produce un outpot, invece la funzione
+prende dei dati e tramite essi costruisce latre info che rende disponibili a chi ne ha bisogno
+tramite una direttiva return 
+ci sono funzioni per css tipo quelle per le animazioni, e ci sono
+funzioni per i colori per sass 
+La estendibilità servono per gestire elementi simili legata ad un concetto di familiarità, pertanto classi che fabnno riferimento ad un medesimo contesto, si estendono l'uno con l'altra
+la extend gestisce e regole per evitare ridondanza 
+
+Con i cicli si centralizzano delle operazioni ripetitive
+IF implementa un test
+For/while che implementano dei cicli 
+Genera comunque codice statico perché non andranno a testare un'esecuzone live del codice, ma solo la momento della compilazione del sass
+La direttiva IF produce un output anziché un altro 
+IF testa un valore, se è true produc ein outpot quanto contenuto all'interno delle graffe altrimenti nulla
+se sarà il costruto else viene scritto dopo la parentesi if che rappresenta 
+ dice altrimenti produci questo in output 
+ questo va scritto nel file mixing 
+ @mixin font-sizer($ size, $max-size:24px) {
+    @if ($size <=$max-size) {
+        font-sizer:$size;
+    }
+    @else {
+        font-size:$max-size;
+    }
+ }
+
+ 
+ 
+ questonel file scss
+
+ .sized {
+    @include font-sizer (48px); {
+ }
+
+
+ non sono obbligatorie le parentesi dopo la if e  nè la else
+ le if raccontano al sass che tipo di scelte effetturare sche vengono tetati permprodurre degli outpot 
+ con i mixin passiamo dei parametri che possono influenzare delle scelte 
+ l'automatizzazione di processi è la base degli algotimi
+le iterazoni le implementiamo attraverso il costrutto @eanch e @For
+@each produce un outpot in cui dato un elenco un parametro assume di volta in volta un singolo valoe contenuto in quel elelenco
+
+@each $h in $heads {
+    @include head($h, $head-font);
+}
+
+each evita di effetturare operazioni ridondanti 
+
+$list: p, h1, h3
+@each $item in $list {
+    #{$item} {
+        color: black;
+    }
+}
+
+each scansiona la lista ad ogni interazioni con la variabile i, mettere p la prima volta, h1, la seconda, e la terza h3
+Il costrutto while crea una condizone che permane in un caricando
+ciclo fintanto che la condizione è vera 
+Il while è utile quando la condizone non è stretttamente legata ad un valore numerico. E' simille al For
+le media query ci consentono di voncolare una particolare formattazone ad un particolare tipo di sdispositivo
+Le media query in sass possono essere innestati all'interno degli elementi che consentono di legare un paeticolaee output soltano agli lelementi desiderati
+Le media query si sposano con i mixin e si sposano con un caricando
+concetto che permettono di fare operazioni più complesse da gestire su nostri breakpoint
+mixin dotato di contenuto è un mixin che ltre a prevedere dei parametri 
+prevede anche un bloco di codice da produrre al suo interno

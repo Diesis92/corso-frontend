@@ -1,0 +1,26 @@
+@mixin google-font($font-name) {
+    @import url(https://fonts.googleapis.com/css?family=#{$font-name});
+}
+
+@mixin head($level, $font) {
+    h#{$level} {
+        font-size: (5 - $level) * 1em;
+        font-family: $font;
+    }
+}
+
+@mixin warning {
+    background-color: $warning-button-color;
+    color: $warning-button-text;
+    box-shadow: -2px 2px gray;
+
+    &:hover {
+        background-color: lighten($warning-button-color, 10%);
+        transform: translate(-1px, 1px);
+        box-shadow: none;
+    }
+}
+
+@mixin rounded($pixels: 10px) {
+    border-radius: $pixels;
+}

@@ -1,0 +1,49 @@
+@import 'partials/colors';
+@import 'partials/dimensions';
+@import 'partials/fonts';
+
+@import 'mixins';
+
+@include google-font("Josefin+Slab");
+@include google-font("Advent+Pro");
+
+body {
+    font-family: $text-font;
+    color: $primary-color;
+}
+
+@include head(1, $head-font);
+@include head(2, $head-font);
+@include head(3, $head-font);
+@include head(4, $head-font);
+
+.warning {
+    @include warning;
+    @include rounded(15px);
+    padding: 8px 12px;
+}
+
+#header {
+    height: $header-height;
+    background-color: $back-color;
+    color: $inverse-primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    li {
+        display: inline;
+        padding: 0 5px;
+    }
+
+    a {
+        color: $inverse-primary-color;
+        text-decoration: none;
+        border-bottom: 1px solid transparentize($inverse-primary-color, 1);
+        transition: border-bottom .5s;
+
+        &:hover {
+            border-bottom: 1px solid opacify($inverse-primary-color, .5);
+        }
+    }
+}
