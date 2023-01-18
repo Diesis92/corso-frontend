@@ -1,0 +1,12 @@
+info scalare è una info semplice che contiene un solo dato 
+Var possiamo sempre cambiarle
+let sono variabile alla coppia del blocco con le parentesi 
+
+tdcnica dello shadowving let serve a proteggere le nostre variabili da un accesso esterno
+information aiting
+una variabile dichiarata con consta una volta dichiarata non potrà essere modificata successivamente
+non possiamo fare nè una reassegnazione nè una modificata
+la consta è vincolata nel blocco di codice in cui è generata backslace 
+ci consente di mandare a capo una stringa lunga 
+sulla stampa html gli spazzi collassano, mentre sulla stampa in console, riposrta gli spazi delle due frasi 
+La funzione è un blocco di codice 
