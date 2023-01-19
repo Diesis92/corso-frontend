@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showAlert() {
+            alert("Hai appena premuto sul pulsante")
+        }
+        function sum(n1, n2) {
+            if (n1 === undefined) n1 = 0;
+            if (n2 === undefined) n2 = -10;
+            return n1 + n2;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Invocazione di Funzione</h1>
+    <p>Premi sul pulsante per visualizzare un messaggio:
+        <button onclick="showAlert()">Premi Qui</button>
+    </p>
+    <script>
+        document.write(sum(10))
+    </script>
+    </p>
+    <p>
+        <script>
+            // var somma = function (a, b) { return a + b }
+            // var somma = (a, b) => { return a + b }
+            var somma = (a, b) => a + b // arrow function o lambda function
+            document.write(somma(10, 20))
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(
+                (function (a, b) { return a * b })(10, 40)
+            )
+        </script>
+    </p>
+</body>
+
+</html>

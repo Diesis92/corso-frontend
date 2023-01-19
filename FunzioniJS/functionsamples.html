@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function title(text) {
+            document.write("<h2>")
+            document.write(text[0].toUpperCase() +
+                text.slice(1, text.length).toLowerCase().replace("titolo", "header")
+            );
+            document.write("</h2>")
+        }
+        function somma(primo, secondo) {
+            return primo + secondo
+        }
+    </script>
+</head>
+
+<body>
+    <script>title("Primo Titolo")</script>
+    <p>Questo è il testo del primo titolo</p>
+    <script>title("Secondo Titolo")</script>
+    <p>Questo è il testo del secondo titolo</p>
+    <script>title("Terzo Titolo")</script>
+    <p>Questo è il testo del terzo titolo</p>
+    <p>
+        2 + 3 = 
+        <script>
+            var risultato = somma(2, 3)
+            document.write(risultato)
+        </script>
+    </p>
+    <p>
+        12 + 13 = 
+        <script>
+            var risultato = somma(12, 13)
+            document.write(risultato)
+        </script>
+    </p>
+</body>
+
+</html>

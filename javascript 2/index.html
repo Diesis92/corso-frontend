@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var intero = 10
+        var decimale = 10.5
+        var stringa = "Esempio di stringa"
+        var stringaalt = 'Esempio di' + ' stringa'
+        var vero = true;
+        var falso = false;
+
+        console.log(1 + 2)
+        console.log(1 - 2)
+        console.log(1 * 2)
+        console.log(1 / 2)
+        console.log(5 % 2)
+
+        var testo = "Valore: "
+        var valore = 10;
+        var conc = testo + valore
+        console.log(conc)
+        console.log(valore + testo)
+
+        var test = 15
+        { // inizio del BLOCCO DI ISTRUZIONI
+            var test = 10
+            console.log("nel blocco", test)
+        } // fine del BLOCCO 
+        console.log("fuori dal blocco", test)
+
+        var v = "Esempio di variabile dichiarata all'esterno del blocco"
+        {
+            let v = "Esempio di variabile definita con let!"
+            console.log(v)
+        }
+        console.log(v)
+
+        const pi_greco = 3.14;
+        console.log(pi_greco)
+        //pi_greco = 3.1415; // ERRORE: pi_greco è COSTANTE
+
+        var number = 10;
+        number += 1;
+        console.log(number)
+        number -= 5;
+        console.log(number)
+        number++;
+        console.log(number)
+        number--;
+        console.log(number)
+
+        // operatori logici
+        // uguaglianza larga
+        var v1 = 10
+        console.log("v1 == 10", v1 == 10)
+        console.log("v1 == \"10\"", v1 == "10")
+        // uguaglianza stretta
+        console.log("v1 === \"10\"", v1 === "10")
+        // disuguaglianza larga
+        console.log("v1 != \"10\"", v1 != "10")
+        // disuguaglianza stretta
+        console.log("v1 !== \"10\"", v1 !== "10")
+        // confronto
+        console.log(v1 > 5)
+        console.log(v1 < 5)
+        console.log(v1 >= 5)
+        console.log(v1 <= 5)
+        console.log(typeof v1)
+        console.log(typeof nonesiste)
+
+        var v = 15;
+        var d = 2;
+        var multiplo = v % d == 0 ? (v + " è multiplo di " + d) : (v + " non è multiplo di " + d)
+        console.log(multiplo)
+        if (v % d == 0 || v > 10) {
+            console.log("blocco if", v, "è divisibile per", d,  "oppure v > 10")
+        }
+        else {
+            console.log("blocco else", v, "non è divisibile per", d)
+        }
+        console.log("fuori dalla if")
+    </script>
+</body>
+
+</html>

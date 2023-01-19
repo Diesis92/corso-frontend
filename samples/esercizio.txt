@@ -1,0 +1,7 @@
+Home Page
+Elenco degli articoli
+Lettura dei singoli articoli
+Sezione di Amministrazione del sistema
+    Gestione utenti
+Sezione di Gestione dei post
+    Elenco degli articoli dell'utente corrente

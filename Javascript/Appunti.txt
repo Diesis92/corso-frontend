@@ -1,0 +1,116 @@
+Il browser si ricava una spazio storage per salvarsi delle info
+La programmazione è un ambito in cui si trasferisce alla macchina la capacità di effettuare autonomanebte delle operazioni
+implementando dei processi automatizzati detti algoritmi
+Algoritmo
+1.prend la pentola
+2. la riempo d'acqua
+3. la metto sui fornelli
+4.accendo il fuoco
+un algortimo è la seguenza di operazioni elementari tramite le quali
+a partire da uno stato iniziale si porta un sistema in uno stato finale 
+che è rappresentato dal fatto che alla fine non sarà più (la pentola) sullo stipeto, ma sul fuoco a bollire 
+procedimenti sequenziali che svolgono determinate operazioni
+linguaggi di programmazione si dividono in 3 macrofamiglie
+1.linguaggi che lavorano attraverso algortmi che producono autonomamente lato srever
+2.linguaggi che per poter svolgere le loro instruzioni hanno bisogno di uno script che legga ad uno ad uno le instruzioni
+i linguaggi di tipo script hanno bisogno di supporto che legga ad uno ad uno le instruzioni
+il supporto alle esecuzioni delle esecuzioni sarà dato da un componente interno al browser detto parser
+Cos'è il DOM?
+è ciò che il browser vede della pagina HTML 
+in pratica quando noi abbiamo un cdocumento html il browser nel caricarlo nel client in cui lo deve caricare si crea una struttura ad albero ed ognuna di essi fa riferimento ad un tag html in maniera tae che il browser per ognuna dei tag mantiene le info necessarie per poterlo rappresnetare
+
+esso è l'elemento più importnate all'interno del browser per applicare la fomrattazione css per i diversi tag
+è nato nel 1995 quando intenert era agli albori ed è nato con scopi non velleitari
+questa sua nascita ne ha influenzato il suo utilizzo
+javascript è un linguaggio di scripting 
+i linguaggi compilati vengono utlizzati per produrre delle app che sono eseguibili autonomicamente quindi da becked e di creazione software
+penserà il compilatore a ricavare un eseguibile autonomo
+i linguaggi di scripting hanno bisognod i parser che è in grado di eseguire il contento dello scripting leggendo riga per riga
+parser javascript carica nel browser e lo esegue sulla macchina sulla quale il browser stesso è in esecuzione
+viene usato per l'implementazione di interattività del front end
+il javascript è stato anche introdotto in ambito server per esempio in node.js 
+tramite javascript possiamo modificare il dom 
+Puoi scriver elo script nell head, prima della fine del tag chiuso di body
+document.write e windows aler sono possibilità obsolete
+console.log per il debbug è molto importante 
+console log ci consente oepraizoni complesse 
+ci consente di avere un feedback immediato per avere un outpot per capire se quello che abbiamo scritto produce il risultato che intenedevamo implementare
+e se ci sono problemi di logica all'interno del codie 
+un algortmo prende delle info e ele traforma in qualcosa algortmo
+cos'è il dato? Rappresenta un'info completa 
+di ciò che la nostra app è in grado di gestire
+un dato è caratterizzato da una serie di caratteristiche che consentono subito di comprende dell'emento di cui stiamo parlando e di gestirne gli aspetti
+per esempio se abbiamo la necessità di elesprimere i dati na
+anagrafici degli utenti , esso ci consente di rappresnetare un info reale in ogni suo aspetto
+abbiamo la necessità di gestire info diverse che caratterizzano  l'utente
+quando produco una frase produco un algoritmo in base alle info che sono nella mia mente
+questo contesto fa riferimento alla moemoria voltatil ed una persistente
+ad ogni app quando essa viene un eseguita viene associata
+la memoria ram simulando il processo di apprendimento
+questa memoria funziona atrraverso la possibilità di ritagliare uno sazio fisico nella ram 
+uno spaizo in grado di contenere un info per cui in un contesto informatico noi abbimao la possibilità di istruire la nostra macchina in manniera tale da poter ritagliare nella ram simulando quel processo di immagazinamento dei dati che per noi è automatica
+quest'area deve essere ritagliata all'interno di uno spazio fisico limitato 
+i linguaggi di programmaizone ci fa inserire all'interno della ramn info numeriche ed alfanumeriche
+le info possono essere numeriche decimali, integrale o alfanumerica
+è necessario collegare a quest'area di memoria che vogliamo conservare anche un nome univoco, detto processo di creazione di una variabile
+il contenuto di un'area di memoria collagto ad unome che ci consente di fare rifemrnto ad essa in ogni momento
+per poter suggerire al nostro browser che intendiamo fare riferimento ad un'area di meoria per gestire in essa un particolare dato, noi dobbiamo efefttuare un operazione attraverso la quale noi gli chiediamo di riservare un'area di memoria
+l'istruzuone VAR indica al browser che abbiamo ll'intenzione di un'area di mmemoria
+l'istruzione var la quale rende nota alla macchina la volontà d voler utilizzare un'area della ram
+alla var viene associetao il nome , il nome che io dò alla mia area di memoria è detto nome di variabikle
+e tramite esso effettuaimo delle operazioni di scrittura o leettura
+la prima è la modialità con la quale immagazzianmo la info, è quinid la fase di apprendimwneto e la immagazianimo pe run suo utilizzo futuro
+l'immagazinemneto avviene tramite la scrittura di un dato all'interno della ram e avviene attraverso un elelento che effta un ioerazione comppessa
+la cosidetta operazione di assegnazione che ha il compito di prender eun valore e scriverlo all'inetrno della ram essa avviene  attraverso un particolare carattere che rapprenta l'operatore di assegnazione
+operatore di assegnazione =  ha il compito di valuytare 
+l'info che sta alla sua destra (right value) calcola il risultato in un  espressione e scrive tale info nella variabile che sta alla sua sinistra
+left value. Un info è caratterizzata da un valore che eè espresso attraverso un meccanismo che lo calcola. esistono info dal valore 
+già pronto esistono delle espressioni che necessitano  elavorazioni più complesse 
+Una volta definita l'unità di valore, valuta il numero deimale e va a ascrivere l'info indicata con nome numero
+è possibile in esso utulizzare tutte le info della matematica tradizionale, come anche le pparentesi 
+tramite una variable e tramite = l'operatore di assegnazione oi possiamo fare elaborazioni matematiche 
+l'operazione inversa ci consente di guardare cosa c'è dentro una variabile
+una variabile inserita in un contesto di lettura 
+fornisce l'info che sta a suo interno. i contetsi di lettura sono contetsi relativi ad espressioni
+un altro contesto di lettura prevede la presenza di variabile all'intero di console lobg
+valuta il valore delle variabili e stampa illoro risultato
+il concetto di variabile è importante perché attraverso esse si memorizzano ino che prendiamo quando servono
+poichè una variabikles quasi sempre vienene dichiarata al fine di inserire in essa un info
+noi possiamo abbreviare le info in una sola possiamo valorizzare unaa varianile nel momento in cui abbiamo intensone di utilizzarla
+var dichiara l'intenzone di voler memorizzare un info, quest'ultima può essere caratterizzata da una var o una cstante
+i numerci decimali vanno i punti che sostituiscono la virgola 
+
+le info alfanumeriche sono testuali e si chiamano stringe dentro una coppia di apici singoli e doppi 
+Javascript è case sensitive 
+in js non esiste la tipizzazione forte , atraberso una variabile possiamo gestire un inf diversa
+in una variabile è possibile utilizzare il dollaro ma sempre con molt discrezione
+lo usa jquery per lo più 
+Camel case 
+
+// commento instile C che è un commento multilinea e consenre a parser di non intepretare il suo contenuto
+/**/ commento in stile c++ -
+view model 
+pattern mvc cercare 
+jascropt è nato prima del pattern ma oggi si utikizza  in questa modalità 
+principio di ingola responsabilità in informatica 
+applicazioni monoloitiche di una volta erano composte da un unico file enorme con elent legati in maniera fornelli
+oggi abbiamo elemdnti dsocnnessi che bengono messi opportunemenet in relazione 
+per i siti si usa una strattura a cartelle 
+la pagina principale di una cartella è index 
+la home page indicizza alla root tramite / ovvero cartella radice 
+le cartelle  del sito prevdee una struttura a cartellla nella quale vengono suddisive le sezione del sito attraverso sottocartelle
+i file javascript vengono richiamato nel punto in cui ci serve 
+il documenr write consente di genstire anche tag html in quanto produc etutto il proprio contenuto 
+la windw.alert produce un avviso 
+l'html all'interno della window altertnon ha senso 
+la console log  è un'istruzione utile ai fini di debbug
+la console log non produce output evidenti in pagina a all'interno dell'area console
+ogni console log non produce output stampa su una rga diversa
+si possono scrivere più cose sulla stessa riga sepranadole da una virgola
+mai mettere html all'interno di console log
+sulla console possiamo navogare all'interno del codice 
+la differenza tra le variabili sass e js e che nel primo caso le variabili non cambinano
+in js possono cambiare 
+le variabili variano in baseall'algortimo che stiamo implementando 
+il var va usato una sola volta nell'algoritmo 
+root nome progetto

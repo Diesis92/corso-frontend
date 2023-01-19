@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My Site</h1>
+    <p style="color: red; background-color: black">Primo paragrafo</p>
+    <p style="color: yellow; background-color: navy">Secondo paragrafo</p>
+    <p style="color: white; background-color: maroon">Terzo paragrafo</p>
+    <p style="color: gray; background-color: green">Quarto paragrafo</p>
+
+    <script src="../assets/js/app.js"></script>
+    <script>emit("Primo esempio", "yellow", "blue")</script>
+    <script>emit("Secondo esempio", "maroon", "gray")</script>
+    <script>emit() // non produce output perché sono assenti argomenti</script>
+</body>
+
+</html>
