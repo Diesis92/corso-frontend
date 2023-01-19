@@ -1,0 +1,9 @@
+Array sono elenchi e rappresentano una serie di info che sono accessibili attraverso una caratteristica che li rende assimilabili ad un elenco che li rende attraversabili tramite metodi specifici
+l'array non è una variabile scalare perché gestisce n infrmazioni
+var animali = ["gatto", "cane", "coniglio"]
+Un array è un insieme ordinato di elementi su cui typeof restituisce
+"object".
+L'array èassociativo , cioè ad un ognuno degli elementi un a suo interno viene associata una key di recupero
+i cicli si usano con gli array 
+Metodi delle stringhe operano sul dato sulla variabile a cui sono associati
+quando parliamo di metodi parliamo di funzioni 

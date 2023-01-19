@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     function p (t) {
+            document.write("<p>" + t + "</p>");
+        }
+
+    var a = ["cane", "gatto", "elefante", "leone"]
+    p ("Funzioni LIFO: Last In First Out")
+    p ("Array:" +a.toString())
+    var pop = a.pop ()
+    p (" Elemento estratto: " + pop +" - Array: " + a.toString)
+    a.push ("gazzella")
+    p ("Array dopo push:" +a.toString())
+    p ("Funzioni LIFO: Last In First Out")
+    var s = a.shift()
+    p (" Elemento estratto: " + s +" - Array: " + a.toString)
+    a.unshift ("leopardo")
+    p (" Array dopo un unshift: " + a.toString())
+    delete (a [1])
+    p (" Delete: " + a.toString())
+    a.splice (1,1,"giraffa", "coccodrillo")
+    p ("Dopo splice : " + a.toString())
+    p(3**4)
+    var a = 0
+    a++
+    p("Valore di a dopo l'incremento unitario: " + a)
+    a--
+    p("Valore di a dopo il decremento unitario: " + a)
+    </script>
+    
+</body>
+</html>

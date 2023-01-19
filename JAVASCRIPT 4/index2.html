@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function p (t) {
+            document.write("<p>" + t + "</p>");
+        }
+
+        function getText() {
+            return "Lorem ipsum dolor, sit amet consectetur adipisicing elit" +
+            "Dolorum tenetur nostrum placeat, asperiores quod nobis" + 
+            "aliquid sit quas saepe dolor corrupti veniam temporibus, magni sapiente?"
+        }
+    </script>
+    <h1>Esempi di stringhe</h1>
+    <script>
+        var  text = getText()
+        p ("Testo su cui lavoriamo: &laquo;"+ text + "&raquo;")
+        p ("numero di caratteri nel testo:" +text.length)
+        var parole = text.split('')
+        p ("Parole nel testo:" +parole.toString())
+        p ("Totale parole nel testo:" +parole.length)
+        p ("Sostitiamo i punti con un !: &laquo" + text.replaceAll ('.','!') + "&raquo;")
+
+        // cerchiamo la prima N e scriviamola in grassetto dentro il paragrafo 
+        var t = text.replace ("N", "<strong>N</strong>")
+        p ("Elaborazione di N: " + t)
+        t = text.replaceAll ("d", "<span style='color:red' title='questa è una d'>d</span>")
+        p ("Altro esempio: " + t)
+        var pos= text.su
+    </script>
+    
+</body>
+</html>

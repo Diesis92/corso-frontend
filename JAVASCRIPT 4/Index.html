@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function p (t) {
+            document.write("<p>" + t + "</p>");
+        }
+        var giorni = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"]
+        p (giorni [0])
+        p (giorni [1])
+        p (giorni [2])
+        p (giorni [3])
+        p (giorni [4])
+        p (giorni [5])
+        p (giorni [6])
+
+        //metodo di oggetto array//
+        p (giorni.toString())
+        giorni.sort()
+        p (giorni [0]) 
+        p (giorni.toString())
+
+        var testo = "Lorem ipsum dolor sit amet"
+        var ps_pos = testo.indexOf ("ps") // è come scrivere una funzione IndexOf (testo, "p")
+        p ("posizione di «ps» all'interno della stringa : " + ps_pos)
+        var last_m = testo.lastIndexOf ("m")
+        p("posizione della prima «o» all'interno della stringa : " + last_m)
+        var first_o = testo.indexOf ("o")
+        p("posizione della prima «o» : " + first_o)
+        var second_o = testo.indexOf ("o", first_o + 1)
+        p("posizione della seconda «o» : " + second_o)
+        p("lunghezza della stringa « " + testo + " » : " + testo.length)
+        var s1 = testo.slice(6,11)
+        p("dal 7^ al 12^ carattere: " +s1)
+        var s2 = testo.slice (-8,-2)
+        p("dal 8^ a contare dalla fino fino al 2^ : " +s2)
+        var s3 = testo.slice (-10)
+        p("dal 10^ dalla fine in poi: " +s3)
+        var s4 = testo.substring (6,11)
+        p("dal 7^ al 12^ carattere: " +s4)
+        var s5 = testo.substr(6,5)
+        p("dal 7^ carattere con lunghezza 5: " +s5)
+        var s6 = testo.replace ("ipsum", "IPSUM")
+        p ("Replace:" +s6)
+        var s7 = s6.replace ("ipsum", "ipsum")
+        p ("Replace:" +s7)
+        var s7 = s6.replace (/ipsum/i, "ipsum")
+        p ("Replace:" +s7)
+        var s7 = s6.replace (/i[pt]/i, "XX") // regular expression, su questa regola si basa PERL//
+        p ("Replace:" +s7)
+        var s7 = s7.replace (/i[pt]/i, "XX") // regular expression, su questa regola si basa PERL//
+        p ("Replace:" +s7)
+        var s7 = testo.replaceAll ("i", "X") 
+        p ("Replace:" +s7)
+        var str = "Età:24, Sesso:M, Cittadinanza:ITA"
+        var parti = str. split (',') //array di 3 elementi//
+        p ("Parte 0 :" + parti [0])
+        p ("Parte 0 :" + parti [1])
+        p ("Parte 0 :" + parti [2])
+        p ("Array «parti» come unica stringa : " + parti.toString ())
+    </script>
+</body>
+</html>
