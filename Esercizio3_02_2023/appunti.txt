@@ -1,0 +1,5 @@
+https://jsonplaceholder.typicode.com/
+sono disponibili delle api per il recupero di foto contenute in diversi album
+L'applicazione deve presentare gli album e consentire per ognuno di osservare 
+le foto.
+pagina dove prsentare gli album delle foto con il carosello di bootstrap,

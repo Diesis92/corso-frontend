@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var nome1 = "Archimede"
+        var cognome1 = "Pitagorico"
+
+        console.log(nome1, cognome1)
+
+        var nome2 = "Pico"
+        var cognome2 = "De' Paperis"
+        console.log(nome2, cognome2)
+
+        // definizione di un oggetto Persona tramite la funzione che prende il nome di Costruttore!
+        function Persona(n, c) {
+            // incapsulamento
+            this.nome = n // creo una "variabile" interna che si chiama "nome"
+            this.cognome = c // una variabile di questo tipo è detta "attributo" o "proprietà"
+
+            // metodo (funzione interna ad un oggetto)
+            this.nome_completo = function () { return this.cognome.toUpperCase() + " " + this.nome }
+        }
+        // l'operatore "new" crea in memoria una variabile complessa (oggetto)
+        // che contiene una propria copia degli attributi definiti nella funzione costruttore
+        const archi = new Persona("Archimede", "Pitagorico")
+        const pico = new Persona("Pico", "De' Paperis")
+        console.log(archi.nome, archi.cognome)
+        console.log(pico.nome, pico.cognome)
+        console.log(archi.nome_completo())
+        console.log(pico.nome_completo())
+        // const non impedisce mofiche agli attributi
+        archi.nome = "ArChImEdE"
+        // ma solo evita la possibilità di una nuova inizializzazione
+        // la riga seguente provocherebbe un errore
+        // archi = new Persona("Altra", "Persona")
+        archi.anni = 45
+        console.log(archi.anni)
+        // aggiunta di un metodo alla variabile archi
+        archi.denominazione = function () { return this.nome.charAt(0).toUpperCase() + ". " + this.cognome }
+        Persona.prototype.descrizione = function () { return this.nome.charAt(0).toUpperCase() + ". " + this.cognome }
+        console.log(archi.denominazione())
+        //console.log(pico.denominazione())
+        console.log(archi.descrizione())
+        console.log(pico.descrizione())
+
+        class Person {
+            constructor(nome, cognome) {
+                this.nome = nome
+                this.cognome = cognome
+
+                this.descriviti = function () {
+                    return this.cognome + " " + this.nome
+                }
+            }
+        }
+
+        var paperone = new Person("Paperon", "De' Paperis")
+        var nonna = new Person("Nonna", "Papera")
+        console.log(paperone.descriviti())
+        console.log(nonna.descriviti())
+
+        // Employee è SOTTOCLASSE di Person
+        // Person
+        //   ^
+        //   |
+        // Employee
+        class Employee extends Person {
+            // il costruttore di employee
+            // deve gestire gli attributi propri 
+            // di employee ma anche quelli di Person
+            constructor(nome, cognome, qualifica) {
+                // la parola chiave super serve per
+                // fare riferimento alla SUPERCLASSE
+                // cioè alla classe più in alto nella gerarchia
+                // in questo caso RICHIAMA il costruttore
+                // della superclasse per consentirgli di effettuare
+                // il compito che aveva nella SUA classe
+                super(nome, cognome)
+                // dopo la chiamata al costruttore della superclasse
+                // la classe employee può gestire i dati
+                // DI PROPRIA COMPETENZA
+                this.qualifica = qualifica
+            }
+            // la specializzazione può consistere anche nell'aggiunta
+            // di nuovi metodi (funzioni)
+            // che apparterrano ovviamente solo alla sottoclasse
+            work() {
+                console.log("Sono seduto alla mia postazione di lavoro")
+            }
+        }
+        // la new richiama il constructor di Employee è come se scrivessi (ma non posso scriverlo!)
+        // Employee_constructor()
+        var topolino = new Employee("Mickey", "Mouse", "I^ Livello")
+        console.log(topolino.descriviti())
+        topolino.work()
+    </script>
+</body>
+
+</html>

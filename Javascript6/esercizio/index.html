@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+</head>
+
+<body>
+    <h1>Guess the Number</h1>
+    <article>
+        <details>
+            <h2>Come si gioca</h2>
+
+            Il computer "pensa" ad un numero
+            compreso tra 1 e 1000.
+            Il giocatore ha a disposizione 10 tentativi
+            per indovinare il numero.
+            Ad ogni tentativo il computer dirà se il numero
+            al quale ha "pensato" è maggiore o minore
+            del numero digitato dall'utente.
+            Alla fine dei 10 tentativi il computer mostrerà
+            il numero al quale aveva "pensato", a meno che
+            il giocatore non avrà indovinato.
+        </details>
+    </article>
+
+    <!-- 
+        Innanzitutto possiamo trovarci in uno stato
+        iniziale, in cui il gioco non è cominciato e 
+        l'utente deve premere un pulsante per farlo partire
+        Dopo la pressione del pulsante il gioco può partire.
+    -->
+    <div>
+        <script>document.write(new Date())</script>
+    </div>
+    <div id="stato_iniziale">
+        <h2>Avvia la Partita</h2>
+        <label>Come ti chiami?</label>
+        <input id="input_nome">
+        <button type="button" onclick="inizia()">Inizia a Giocare</button>
+    </div>
+    <div id="stato_gioco">
+        <h2>Stiamo Giocando</h2>
+        <div>Numero pensato: <span id="target"></span></div>
+        <div><span id="nome">NOME GIOCATORE</span>, hai a disposizione ancora
+            <span id="tentativi">10</span>
+            tentativi
+        </div>
+        <label>Prova ad indovinare</label>
+        <input type="number" min="1" max="1000" id="input_numero">
+        <button onclick="feedback()">Nuovo Tentativo</button>
+        <div id="messaggio">
+            Messaggio di aiuto dopo un tentativo
+            o comunicazioni di fine gara (vittoria, sconfitta)
+        </div>
+    </div>
+    <!-- 
+        Dobbiamo gestire:
+        - il numero che viene pensato dal computer
+            => ci serve un numero intero compreso tra 1 e 1000
+        - il nome dell'utente 
+            => ci serve una stringa
+        - lo stato di gioco: "in gioco" o ancora "non in gioco"
+            => ci serve un dato opportuno (booleano?)
+        - il numero di tentativi ancora a disposizione
+            => ci serve un numero intero
+        - il numero digitato dall'utente
+            => ci serve un numero intero
+    -->
+    <script src="./assets/js/guessthenumber.js"></script>
+</body>
+
+</html>

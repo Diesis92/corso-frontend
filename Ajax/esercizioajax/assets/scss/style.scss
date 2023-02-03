@@ -1,0 +1,16 @@
+body {
+    width: 90vw;
+    margin: auto;
+}
+
+#articles {
+    float: left;
+    width: 45%;
+}
+
+#details {
+    width: 45%;
+    padding: 20px;
+    float: right;
+    border: 1px solid black;
+}

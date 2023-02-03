@@ -1,0 +1,18 @@
+.header {
+  border: 1px solid lime;
+}
+.header p {
+  padding: 30px;
+}
+
+.cover {
+  background: url("..assets/scss_2/Palermo.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
+
+.footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,6 @@
+Solid= Singola responsabilità
+ogni oggetto ha un unico compito 
+UN evento è una comunicazione che viene effettuata dal componenete all'app in maniera tale che qualsiasi componente deve eeffettuare un operatzione lo può fare facendo una ruotine avolgendo il suo eveneto
+gestore di evento ad esempio onclick 
+tutti gli eventi cominciano con l'aatributo "ON"come onclick 
+listener, volontà di metterci in ascolto

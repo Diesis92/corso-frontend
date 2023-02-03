@@ -1,0 +1,4 @@
+Nasce da ecmascript 6 ed è un linguaggio compilato simile al sass
+alle variabili è possibile associare un dominio 
+un uguale- assegnazione
+due uguali- confronto da due valori 

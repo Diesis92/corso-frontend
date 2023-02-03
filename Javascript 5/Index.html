@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Semplice calcolatore</h1>
+    <input id="primo" type="number" value="0">
+    <input id="secondo" type="number" value="0">
+    <button onclick="add()" type="button">Addiziona</button>
+    <button onclick="deleteChildren()" type="button">Reset</button>
+    <div> Risultato: <span id="risultato"></span></div>
+    <script>
+        function i(id) {
+             return document.getElementById (id)
+        }
+
+        //function calc(params) {
+            //var tag = i ("decimale")
+           //console.log(tag)
+            //console.log(tag.value)
+        //}
+        function add () {
+            //leggo il primo valore
+            var primo = i ("primo")
+            // leggo il secondo valore
+            var primo = i ("secondo")
+            //calcolo la somma
+            var somma = 1 * primo.value + 1 * secondo.value
+            // scrivo il risultato 
+            i ("risultato").innerText = somma 
+            i ("risultato").style = "color: red;"
+            var li = document.createElement ("li")
+            var ul = i ("list")
+            ul.append (li)
+            li.innerText = somma
+
+        }
+
+        function deleteChildren() {
+            i ("list").innerHTML = ""
+            //var c = i("list").children
+            //console.log (c)
+            //for (var x = 0; x < c.length; x++) {
+                //i ("list").removeChild (c[x])
+           // }
+        }         
+        //document.write()//
+        //console.log (document.getElementById ("decimale"))//
+        //var inputTag = document.getElementById ("decimale")//
+        //console.log (inputTag)//
+        //console.log (inputTag.Value)//
+    </script>
+</body>
+</html>

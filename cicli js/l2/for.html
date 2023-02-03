@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>For</h1>
+    <script>
+        document.write("<dl>")
+        for (var i = 0, a = 0; a < 6.3; i++, a += .1) {
+            document.write("<dt>Iterazione n. " + i + "</dt>")
+            document.write("<dd>a = " + a + " - cos(a) = "
+                + Math.cos(a) + "</dd>")
+        }
+        document.write("</dl>")
+    </script>
+    <h1>Attraversamento di Array con For</h1>
+    <ul>
+        <script>
+            var a = [43, 2645, 87, 2345, 9, 23, 6890]
+            for (var i = 0; i < a.length; i++) {
+                document.write("<li>" + a[i] + "</li>")
+            }
+        </script>
+    </ul>
+    <h1>Attraversamento di Array con For/in</h1>
+    <ul>
+        <script>
+            var a = [43, 2645, 87, 2345, 9, 23, 6890]
+            for (var e in a) {
+                document.write("<li>" + a[e] + "</li>")
+            }
+        </script>
+    </ul>
+    <h1>Attraversamento di Array con For/of</h1>
+    <ul>
+        <script>
+            var a = [43, 2645, 87, 2345, 9, 23, 6890]
+            for (var e of a) {
+                document.write("<li>" + e + "</li>")
+            }
+        </script>
+    </ul>
+</body>
+
+</html>

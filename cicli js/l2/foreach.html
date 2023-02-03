@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>forEach</h1>
+
+    <script>
+        var a = [1, 4, 32456, 123, 45678, 2345, 906, 324]
+
+        a.forEach(
+            //function (value, indice, array) {
+            (value, indice, array) => {
+                document.write("<p>" + value)
+                document.write(" in posizione " + indice + " nell'array ")
+                document.write(array)
+                document.write(value % 2 == 0 ? " è pari" : " è dispari")
+                document.write("</p>")
+            }
+        )
+
+    </script>
+    <h1>map</h1>
+    <script>
+        var sa = a.map((i, p) => "Elemento in posizione " + p + ": " + i)
+
+        sa.forEach(i => document.write("<p>" + i + "</p>"))
+
+        sa = a.map(i => i > 10000 ? "alto" : "basso")
+        sa.forEach(i => document.write("<p>" + i + "</p>"))
+        //function anonima(i) { document.write("<p>" + i + "</p>") }
+    </script>
+    <h1>filter</h1>
+    <script>
+        var f = a.filter(i => i % 2 == 0)
+        document.write("Elementi pari dell'array:")
+        f.forEach(i => document.write("<p>" + i + "</p>"))
+        document.write("Elementi dispari dell'array:")
+        document.write("<ul>")
+        a.filter(i => i % 2 != 0)
+            .map(i => "Numero: " + i)
+            .forEach(i => document.write("<li>" + i + "</li>"))
+        document.write("</ul>")
+    </script>
+    <h1>reduce</h1>
+    <script>
+        var s = a.reduce((t, i) => t + i)
+        document.write("<p>")
+        document.write("Somma di tutti gli elementi di " + a + " = " + s)
+        document.write("</p>")
+
+        s = a.filter(i => i % 2 == 0).reduce((a, e) => a * e)
+        document.write("<p>")
+        document.write("Prodotto di tutti gli elementi pari di ")
+        document.write(a + " = " + s)
+        document.write("</p>")
+
+    </script>
+    <h1>find</h1>
+    <p>Primo numero > 10000: 
+    <script>
+        var n =a.find(i => i > 10000)
+        document.write(n)
+        document.write(" che si trova in posizione ")
+        document.write(a.findIndex(i => i == n))
+        // function anonima(i) { return i == n }
+    </script>
+    </p>
+</body>
+
+</html>

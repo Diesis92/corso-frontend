@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        Testo su cui effettuare la ricerca: <input id="testo">
+    </div>
+    <div>
+        Testo da ricercare<input id="cerca">
+    </div>
+    <div>
+        <button onclick="inizio()">Cerca all'inizio</button>
+        <button onclick="fine()">Cerca alla fine</button>
+        <button onclick="array()">Trasforma in Array</button>
+        <button onclick="eseguiSomma()">Somma Numeri</button>
+        <button onclick="mappa()">Esempio di Mappa</button>
+    </div>
+    <div id="risultato"></div>
+    <script>
+        function scriviRisultato(testo) {
+            document.getElementById("risultato").innerText = testo
+        }
+        function inizio() {
+            const testo = document.getElementById("testo").value
+            const cerca = document.getElementById("cerca").value
+            const trovato = testo.startsWith(cerca)
+            scriviRisultato(trovato ? "TROVATO" : "NON TROVATO")
+        }
+        function fine() {
+            const testo = document.getElementById("testo").value
+            const cerca = document.getElementById("cerca").value
+            const trovato = testo.endsWith(cerca)
+            scriviRisultato(trovato ? "TROVATO" : "NON TROVATO")
+        }
+        function array() {
+            const testo = document.getElementById("testo").value
+            const arr = Array.from(testo)
+            let ris = ""
+            for (let i of arr) {
+                ris += "Elemento: " + i + ","
+            }
+            scriviRisultato(ris)
+        }
+
+        function eseguiSomma() {
+            const ris = somma(1, 2, 5)
+            scriviRisultato(ris)
+        }
+        function somma(...x) {
+            let r = 0
+            for (let i of x) r += i
+            return r
+        }
+
+        function mappa() {
+            var m = new Map()
+            m.set("nello", { nome: "Nello", cognome: "Rizzo" })
+            m.set("paperino", { nome: "Paperino", cognome: "Paolino" })
+            m.set("paperone", { nome: "Paperon", cognome: "De' Paperoni" })
+
+            m.delete("paperino") // eliminazione tramite chiave
+            if (m.has("paperino")) {
+                var item = m.get("paperino")
+                scriviRisultato(item.nome + " " + item.cognome)
+            } else {
+                scriviRisultato("Non ho trovato paperino")
+            }
+        }
+
+        const gatto = { zampe: 4, verso: 'miao' }
+        const cane = { ...gatto, verso: 'bau' }
+        console.log(gatto, cane)
+
+        let a, b, c
+        [a, b, c] = [3, 2, 1]
+        console.log(a, b, c);
+        [a, b] = [b, a]
+        console.log(a, b);
+        let [head, ...tail] = [1, 2, 3, 4, 5, 6]
+        console.log(head, tail)
+
+        f(10, 9, 8, 7, 6)
+        function f(h, ...t) {
+            if (t.length == 0) return 
+            console.log("Sto eseguendo f", h,t)
+            let [a, ...b] = t
+            f(a, ...b)
+        }
+    </script>
+</body>
+
+</html>

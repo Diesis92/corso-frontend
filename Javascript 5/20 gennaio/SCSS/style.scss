@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+$colorprimary: rgb(62, 58, 58);
+$colorsecondary: #252525;
+
+html {
+    font-size: 62, 5%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+
+    .screen {
+        width: 92%;
+        font-size: 5rem;
+        height: 80px;
+        border: none;
+        background-color: #252525;
+        color: #fff;
+        text-align: right;
+        padding-right: 20px;
+        padding-left: 10px;
+        font-family: 'Lobster', cursive;
+    }
+
+    button {
+        height: 70px;
+        background-color: grey;
+        border-radius: 3px;
+        border: 1px solid #c4c4c4;
+        background-color: transparent;
+        font-size: 2rem;
+        color: white;
+        font-family: 'Lobster', cursive;
+
+        &:hover {
+            background-color: grey;
+            transition: all ease-in-out 1s;
+            box-shadow: 1px 1px 0 white;
+        }
+    }
+}
+
+button.operator {
+    color: white;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: $colorprimary;
+}
+
+.uguale {
+    background-color: rgb(80, 186, 186);
+    color: $colorprimary;
+}

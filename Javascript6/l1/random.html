@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="rnd"></div>
+    <div>Numero casuale compreso tra 0 e 100: <span id="rnd100"></span></div>
+    <div>Numero casuale intero compreso tra 0 e 100:
+        <span id="rnd100i"></span>
+    </div>
+    <div>Numero casuale intero compreso tra 15 e 115:
+        <span id="rnd100i2"></span>
+    </div>
+    <div>Password casuale: <span id="pwd"></span></div>
+    
+    <script>
+        function _(id) { return document.getElementById(id) }
+
+        var rnd = Math.random()
+        _("rnd").innerText = rnd
+        _("rnd100").innerText = rnd * 100
+        _("rnd100i").innerText = Math.floor(rnd * 100)
+        _("rnd100i2").innerText = Math.floor(rnd * 100) + 15
+
+        var dizionario = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni excepturi quasi repellendus, placeat, sed dolores expedita, eveniet qui tenetur totam vel fugit sequi architecto odit aperiam molestias vitae. Adipisci, unde?"
+        var pwd = dizionario.split(' ')
+        var p = pwd[Math.floor(rnd * pwd.length)]
+        _("pwd").innerText = p
+    </script>
+</body>
+
+</html>

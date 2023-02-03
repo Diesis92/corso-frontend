@@ -1,0 +1,3 @@
+Una promise è un oggetto che racchiude una serie di funzioni 
+Una promise serve per evitare che un'esecuzione di una funzone lunga possa addromentare il browser 
+!doctype-direttiva

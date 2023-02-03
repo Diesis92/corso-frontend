@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #result {
+            overflow: scroll;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ajax</h1>
+    <div id="clock"></div>
+    <div>
+        <h2>Messaggi dal server</h2>
+        <button onclick="perform()">Invia Richiesta</button>
+        <ul></ul>
+        <div id="result"></div>
+
+        <button id="next">Successivo</button>
+        <h3 id="title"></h3>
+        <div id="body"></div>
+    </div>
+
+    <script>
+        showClock()
+        function showClock() {
+            var clock = document.getElementById("clock")
+            var now = new Date()
+            clock.innerText = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds()
+            setTimeout(() => {
+                showClock()
+            }, 1000)
+        }
+
+        function showMessage(message) {
+            var ul = document.getElementsByTagName("ul")[0]
+            var li = document.createElement("li")
+            li.innerText = message
+            ul.appendChild(li)
+        }
+
+        function perform() {
+            // inizializzazione dell'oggetto che comunica con il server
+            var richiesta = new XMLHttpRequest()
+            // dico cosa fare quando il server ci comunica qualcosa
+            richiesta.onload = function (e) {
+                showMessage("Type: " + e.type + " Status: " + richiesta.status)
+                if (richiesta.status >= 200 && richiesta.status < 300) {
+                    document.getElementById("result").innerText = richiesta.responseText
+                    // trasformo la stringa ottenuta come risposta
+                    // in oggetto Javascript (nel nostro caso è un array)
+                    var arrayRisultati = JSON.parse(richiesta.responseText)
+                    var btn = document.getElementById("next")
+                    var count = 0
+                    btn.onclick = function () {
+                        if (count >= arrayRisultati.length) count = 0
+                        // prendo l'elemento dell'array in posizione count
+                        var primo = arrayRisultati[count]
+                        // lo mostro nella pagina
+                        document.getElementById("title").innerText = primo.title
+                        document.getElementById("body").innerHTML = primo.body
+                        count++
+                    }
+                }
+                else {
+                    document.getElementById("result").innerHTML =
+                        "<p>Di seguito la risposta di errore del server</p>" +
+                        richiesta.responseText
+                }
+            }
+            richiesta.onreadystatechange = function (e) {
+                showMessage("State: " + richiesta.readyState)
+            }
+            // apro il canale di comunicazione con il server remoto
+            richiesta.open("GET", "https://jsonplaceholder.typicode.com/posts")
+            //richiesta.open("GET", "http://127.0.0.1:5500/nonesiste")
+            // invio la richiesta
+            richiesta.send()
+        }
+    </script>
+</body>
+
+</html>

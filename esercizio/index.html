@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Muovi la Pallina</h1>
+    <div>
+        <button onclick="move(-10,0)">Sinistra</button>
+        <button onclick="move(10,0)">Destra</button>
+        <button onclick="move(0,-10)">Alto</button>
+        <button onclick="move(0, 10)">Basso</button>
+    </div>
+    <div class="game-board" id="board">
+        <div class="ball" id="ball"></div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

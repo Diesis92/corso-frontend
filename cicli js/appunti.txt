@@ -1,0 +1,8 @@
+La Do while esegue il ciclo almeno una volta, la While potrebbe
+non fare il ciclo 
+il while e il Do While sono costrutti importanti dell'informatica
+in quanto ci consentono di implementare una serie di istruzioni
+specie per gli elementi di un array 
+una mappatura di una lista è una trasfromazone
+arrow function blocco funzione con arrow da passare ad un particolare metodo
+

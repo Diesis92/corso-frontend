@@ -1,0 +1,14 @@
+si progetta n uml prima di creare un sito 
+per accedere ad un sever ci si rivolge ad ajax
+lambda
+Tutti i linguaggi di programazione si approcciano ad oggetti, cioè guardando al dato come attributo 
+la struttura class viene costrutio con la keyword new 
+la classe contiene una serie di attributi
+il costruttore della classe è una funzione che valorizza le info della classe stessa 
+this ci consente di riferici al contenuto interno della funzione costructor 
+proprietà della classe 
+le variabili interne ad un oggetto sono sempre private
+tramite  il setter scrivo una valore dentro una variabile, tramite il getter lo recuper. essi servono a poter accedere alle variabili attraverso un sistema controllato 
+tsc -t es6 + nome del file con cui stiamo lavorando scrivere questo sul terminale per adegarsi alle ecmacript 6
+array di array o matrice 
+array multdimensionali

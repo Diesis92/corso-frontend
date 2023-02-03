@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Attraversamento del DOM</h1>
+    <div>Elemento corrente:
+        <span id="content"></span>
+        - <span id="type"></span>
+        - <span id="name"></span>
+    </div>
+    <button onclick="fc()">Primo figlio</button>
+    <button onclick="ns()">Prossimo fratello</button>
+    <button onclick="ps()">Fratello precedente</button>
+    <button onclick="par()">Genitore</button>
+
+    <script>
+        var current = document
+        show()
+
+        function show() {
+            document.getElementById("content").innerText = current.nodeValue
+            document.getElementById("type").innerText = current.nodeType
+            document.getElementById("name").innerText = current.nodeName
+        }
+
+        function fc() {
+            if (current.firstChild) {
+                current = current.firstChild
+                show()
+            }
+        }
+        function ns() {
+            if (current.nextSibling) {
+                current = current.nextSibling
+                show()
+            }
+        }
+        function ps() {
+            if (current.previousSibling) {
+                current = current.previousSibling
+                show()
+            }
+        }
+        function par() {
+            if (current.parentNode) {
+                current = current.parentNode
+                show()
+            }
+        }
+    </script>
+</body>
+
+</html>

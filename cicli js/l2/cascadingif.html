@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var orario = new Date().getHours()
+
+        if (orario == 6 || orario == 7 || orario == 8
+            || orario == 9 || orario == 10 || orario == 11) {
+            document.write("Buongiorno")
+        }
+        else if (orario == 12) {
+            document.write("Buon appetito")
+        }
+        else {
+            document.write("La giornata è oramai trascorsa")
+        }
+        switch (orario) {
+            case 6:
+                document.write("Buongiorno")
+                break
+            case 7:
+            case 8:
+            case 9:
+            case 11:
+            //document.write("Buongiorno")
+            // fall through
+            case 10:
+                document.write("Sono le 10")
+                break
+            case 12:
+                document.write("Buon appetito")
+                break
+            default:
+                document.write("La giornata è oramai trascorsa")
+                break
+        }
+
+        var we = ["venerdì", "sabato", "domenica"]
+        var weekend = 1
+        if (weekend < 3) {
+            document.write(we[weekend])
+        }
+        else {
+            document.write("feriale")
+        }
+
+        switch (weekend) {
+            case 0:
+                document.write("venerdì")
+                break
+            case 1:
+                document.write("sabato")
+                break
+            case 2:
+                document.write("domenica")
+                break
+            default:
+                document.write("feriale")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="set-date" type="date">
+    <input id="set-time" type="time">
+    <button onclick="leggiData()">Leggi</button>
+    <div id="date"></div>
+    <div id="yesterday"></div>
+    <div id="input"></div>
+    <div id="year"></div>
+    <div id="month"></div>
+    <div id="day"></div>
+    <div id="hours"></div>
+    <div id="mins"></div>
+    <div id="secs"></div>
+    <div id="wd"></div>
+    <script>
+        function g(id) { return document.getElementById(id) }
+        var d = new Date()
+        g("date").innerText = d
+        g("yesterday").innerText = new Date(2023, 0, 22)
+        var millisec_per_giorno = 1000 * 60 * 60 * 24
+        g("yesterday").innerText += new Date(d.getTime() - millisec_per_giorno)
+        g("year").innerText = d.getFullYear()
+        var mesi = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"]
+        g("month").innerText = d.getMonth() + " " + mesi[d.getMonth()]
+        g("day").innerText = d.getDate()
+        g("hours").innerText = d.getHours()
+        g("mins").innerText = d.getMinutes()
+        g("secs").innerText = d.getSeconds()
+        var giorni = ["dom", "lun", "mar", "mer", "gio", "ven", "sab"]
+        g("wd").innerText = d.getDay() + " " + giorni[d.getDay()]
+
+        function leggiData() {
+            g("input").innerText = g("set-date").value
+            g("input").innerText += " " + g("set-time").value
+        }
+
+        var d = new Date("2000-06-31")
+        console.log(d)
+    </script>
+</body>
+
+</html>

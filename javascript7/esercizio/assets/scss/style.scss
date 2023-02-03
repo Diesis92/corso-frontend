@@ -1,0 +1,24 @@
+.game-board {
+    width: 90vw;
+    height: 70vh;
+    border: 5px inset brown;
+    background-color: green;
+}
+
+$ball-size: 50px;
+
+.ball {
+    display: block;
+    position: relative;
+    width: $ball-size;
+    height: $ball-size;
+    border-radius: $ball-size / 2;
+    background: radial-gradient(white, black)
+}
+h1 {
+    text-align: center;
+}
+div {
+    text-align: center;
+    margin-bottom: 3px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="saluto"></h1>
+    <script>
+        function _(v) { document.getElementById("saluto").innerText = v }
+        var d = new Date()
+        d.setHours(13)
+        var h = d.getHours()
+        if (h <= 6 || h > 22) {
+            _("Buona notte")
+        }
+        else if (h < 12) {
+            _("Buongiorno")
+        }
+        else if (h == 12) {
+            _("Buon appetito")
+        }
+        else if (h <= 18) {
+            _("Buon pomeriggio")
+        }
+        else {
+            _("Buonasera")
+        }
+    </script>
+</body>
+
+</html>

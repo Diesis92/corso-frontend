@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Conversione Implicita di Booleano</h1>
+    <div>Confronto di valore con true: <span id="b1"></span></div>
+    <div>Risultato di confronto con if: <span id="b2"></span></div>
+    <div>Risultato di test con if: <span id="b3"></span></div>
+    <div>Risultato di test con if variabile non inizializzata: <span id="b4"></span></div>
+    <div>Risultato di test con if variabile a zero: <span id="b5"></span></div>
+    <div>Risultato di test con if stringa vuota: <span id="b6"></span></div>
+    <div>Risultato di test con if di NaN: <span id="b7"></span></div>
+    <div>Risultato di test con Boolean: <span id="b8"></span></div>
+    <div>Risultato di test con Boolean: <span id="b9"></span></div>
+
+    <script>
+        function _(id, v) {
+            document.getElementById(id).innerText = v
+        }
+
+        var x = 10
+        var y
+        var k = 0
+        var s = ""
+        var n = "Prova" * 2
+        _("b1", x == true)
+        if (x == true) { _("b2", "true") } else { _("b2", "false") }
+        if (x) { _("b3", "true") } else { _("b3", "false") }
+        if (y) { _("b4", "true") } else { _("b4", "false") }
+        if (k) { _("b5", "true") } else { _("b5", "false") }
+        if (s) { _("b6", "true") } else { _("b6", "false") }
+        if (n) { _("b7", "true") } else { _("b7", "false") }
+        _("b8", Boolean(s))
+        _("b9", Boolean(x))
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Estrazioni</h1>
+    <button onclick="estrai()">Estrai un numero</button>
+    <p>Numeri estratti:</p>
+    <p id="estr"></p>
+    <script>
+        // il sacchetto dei numeri
+        var sacchetto = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+        // il quantitativo di numeri da estrarre
+        var totale = 15
+
+        // estrae casualmente un numero dal sacchetto
+        function estrai() {
+            if (totale == 0) {
+                alert("Non ci sono più numeri")
+            }
+            else {
+                // prendo un numero casuale
+                var r = Math.random()
+                // lo rendo all'interno dell'intervallo [0-totale[
+                var n = Math.floor(r * totale)
+                // n rappresenta la posizione del numero nel sacchetto
+                // prelevo il numero dal sacchetto
+                var estratto = sacchetto[n]
+                // prendo il numero che sta in coda al sacchetto
+                var ultimo = sacchetto[totale - 1]
+                // e lo metto al posto del numero appena prelevato
+                sacchetto[n] = ultimo
+                // a questo punto decremento il numero totale
+                totale--
+                // lo stampo a video
+                var attuale = document.getElementById("estr").innerHTML
+                attuale = estratto + "<br>" + attuale
+                document.getElementById("estr").innerHTML = attuale
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.header {
+    border: 1px solid $primary_color;
+    p {
+        padding: 30px
+    }
+}
+
+.cover {
+    @include background-cover("..assets/scss_2/Palermo.jpg");
+    height: 500px;
+}
