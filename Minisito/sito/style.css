@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600&family=Inconsolata:wght@500&family=Kaushan+Script&family=Merriweather&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #000;
+  color: white;
+  padding: 0 auto;
+  font-size: 1.5rem;
+  font-family: Fira Sans;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main aside1"
+    "mai main main aside2"
+    "footer footer footer footer";
+}
+.header {
+  grid-area: header;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: aquamarine;
+}
+.nav {
+  grid-area: nav;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: blue;
+}
+.main {
+  grid-area: main;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  background-color: brown;
+}
+.aside1 {
+  grid-area: aside1;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: darkgoldenrod;
+}
+.aside2 {
+  grid-area: aside2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-color: rgb(232, 20, 172);
+}
+.footer {
+  grid-area: footer;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  background-color: rgb(31, 196, 56);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+img {
+  width: 257.5px;
+  height: 113, 75px;
+  position: relative;
+  top: 30px;
+}
+
+.titolo {
+  position: relative;
+  text-align: center;
+  line-height: 4px;
+  bottom: 80px;
+}
+
+ul li {
+position: relative;
+  display: inline-block;
+  left: 20px;
+  border-radius: 10px;
+  background-color: white;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1em;
+  
+  box-shadow: 2px 2px 2px black;
+  background: linear-gradient(
+    45deg,
+    rgba(108, 193, 226, 1) 35%,
+    rgba(57, 47, 122, 1) 100%
+  );
+  text-align: center;
+  bottom: 12px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  font-size: 1.9rem;
+}
+
+nav ul li a:hover {
+    background-color: blue;
+    transition: all 1s ease-in-out;
+    text-decoration: underline;
+  }
+  li:hover {
+    background: red;
+  }
+  
+  .ricerca {
+    color: black ;
+    left: 1000px;
+    position: relative;
+    bottom: 70px;
+    
+  }

@@ -1,0 +1,19 @@
+nav ul {
+  list-style: none;
+  background-color: #30ad30;
+}
+nav li {
+  padding: 10px 16px;
+  font-size: 20px;
+  color: #fff;
+  display: inline-block;
+}
+nav li:hover {
+  background-color: #1e6d1e;
+  cursor: pointer;
+}
+
+h1 {
+  color: #e74c3c;
+  background-color: #aac0d6;
+}/*# sourceMappingURL=main.css.map */

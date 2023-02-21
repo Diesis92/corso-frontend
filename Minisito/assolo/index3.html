@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      /*gap: 10px;*/
+      /*grid-auto-rows: minmax(100px, auto);*/
+      border: 2px solid black;
+    }
+
+    .one {
+      grid-column: 1 / 5;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      background-color: aquamarine;
+    }
+
+    .two {
+      grid-column: 1 / 5;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      background-color: blue;
+    }
+
+    .three {
+      grid-column: 1 / 4;
+      grid-row-start: 3;
+      grid-row-end: 5;
+      background-color: brown;
+    }
+
+    .four {
+      grid-column: 3 / 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      background-color: darkgoldenrod;
+    }
+
+    .five {
+      grid-column: 3 / 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      background-color: rgb(232, 20, 172);
+    }
+
+    .six {
+      grid-column: 1 / 4;
+      grid-row-start: 5;
+      grid-row-end: 6;
+      background-color: rgb(31, 196, 56);
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="one">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati rem maiores ea nulla dolor illum porro
+        id, accusantium ducimus? Eum cumque enim debitis aliquam, laborum quasi dolor nemo labore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad obcaecati rem maiores ea nulla dolor illum porro
+          id, accusantium ducimus? Eum cumque enim debitis aliquam, laborum quasi dolor nemo labore.</p>
+          <img src="/assets/challenge.png" alt="">
+    </div>
+    <div class="two">nav</div>
+    <div class="three">main</div>
+    <div class="four">aside 1</div>
+    <!--<div class="five">aside 2</div>-->
+    <div class="six">footer</div>
+  </div>
+
+</body>
+
+</html>

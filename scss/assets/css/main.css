@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   border: 1px solid lime;
 }
@@ -6,9 +7,11 @@
 }
 
 .cover {
-  background: url("..assets/scss_2/Palermo.jpg") no-repeat center center;
+  background: url("../Palermo.jpg") no-repeat center center;
   background-size: cover;
-  height: 500px;
+  height: 0px; /* a px perché nel css viene definita in percentuale con l'alttributo padding bottom o top*/
+  padding-bottom: 56.25%;
+  /*sono i rapporti visivi, possiamo anche scrivere 4,3*/
 }
 
 .footer {

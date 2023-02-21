@@ -6,6 +6,7 @@
 }
 
 .cover {
-    @include background-cover("..assets/scss_2/Palermo.jpg");
-    height: 500px;
+    @include background-cover("../Palermo.jpg");
+    @include responsive-height(16,9);/*sono i rapporti visivi, possiamo anche scrivere 4,3*/
+
 }

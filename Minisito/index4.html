@@ -1,0 +1,101 @@
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+ <title>Griglia-Css</title>
+ <meta charset="UTF-8">
+ <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'>
+ <style type="text/css">
+body {
+ width: 90%;
+ max-width: 900px;
+ margin: 2em auto;
+ font-family: Consolas, 'monospace';
+ font-size: 120%;
+}
+.contenitore {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main aside1"
+    "mai main main aside2"
+    "footer footer footer footer";
+}
+
+.contenitore > div {
+  border: 2px solid #ffa94d;
+  border-radius: 5px;
+  background-color: #ffd8a8;
+  padding: 1em;
+  color: #d9480f;
+}
+
+
+.header {
+   grid-area: header;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   grid-row-start: 1;
+   grid-row-end: 2;
+}
+
+
+.nav {
+    grid-area: nav;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   grid-row-start: 2;
+   grid-row-end: 3;
+}
+.main {
+   grid-area: main;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 3;
+   grid-row-end: 5;
+}
+.aside1 {
+    grid-area: aside1;
+   grid-column-start: 3;
+   grid-column-end: 4;
+   grid-row-start: 3;
+   grid-row-end: 4;
+}
+.aside2 {
+   grid-area: aside2 ;
+   grid-column-start: 3;
+   grid-column-end: 4;
+   grid-row-start: 4;
+   grid-row-end: 5;
+}
+.footer {
+   grid-area: footer ;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   grid-row-start: 5;
+   grid-row-end: 6;
+}
+    
+ </style>
+</head>
+
+<body>
+
+<div class="contenitore">
+   <div class="header">header</div>
+   <div class="nav">nav</div>
+   <div class="main">main</div>
+   <div class="aside1">aside1</div>
+   <div class="aside2">aside2</div>
+   <div class="footer">Footer </div>
+</div>
+
+</body>
+</html>
+         
+

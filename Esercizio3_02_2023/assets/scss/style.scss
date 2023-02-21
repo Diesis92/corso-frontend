@@ -1,0 +1,88 @@
+@import '_mixins';
+
+@include g-font('Prata');
+@include g-font('Lato');
+
+body {
+    margin: 0 auto;
+    width: 90vw;
+    font-size: .86rem;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+@for $n from 1 through 6 {
+    @include h($n) {
+        font-family: Prata, "Times New Roman", Times, serif;
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: lightgray;
+    color: black;
+    width: 90vw;
+    font-size: .8em;
+    text-align: center;
+    margin: 3 auto;
+    padding: 3px;
+    border-top: 1px solid gray;
+    position: absolute;
+    bottom: 0px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 10px;
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.albums {
+    overflow-x: hidden;
+    white-space: nowrap;
+
+    ul {
+        margin: 2px;
+        padding: 0;
+    }
+
+    li {
+        cursor: zoom-in;
+        list-style: none;
+        margin: 2px;
+        padding: 1px;
+
+        &:hover {
+            background-color: blanchedalmond;
+        }
+    }
+}
+
+.photos {
+    flex-grow: 9;
+    overflow: hidden;
+    display: flex;
+}
+
+.hidden {
+    visibility: collapse;
+    display: hidden;
+}
+
+.navigation {
+    background-color: rgba(62, 62, 62, .2);
+    width: 10%;
+}
+
+.content {
+    width: 80%;
+    text-align: center;
+    img {
+        padding: 5%;
+        border-radius: 30%;
+        height: 80%;
+        width: auto;
+    }
+}

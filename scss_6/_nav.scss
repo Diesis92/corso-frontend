@@ -1,0 +1,22 @@
+$bg-color: #30ad30;
+$hover-color: #1e6d1e;
+
+nav {
+
+    ul{
+        list-style: none;
+        background-color: $bg-color;
+    }
+
+    li{
+        padding: 10px 16px;
+        font-size: 20px;
+        color: #fff;
+        display: inline-block;
+    }
+
+    li:hover{
+        background-color: $hover-color;
+        cursor: pointer;
+    }
+}

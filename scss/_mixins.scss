@@ -1,0 +1,13 @@
+@mixin background-cover($img_url) {
+    background: url($img_url) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@mixin responsive-height ($x, $y) {
+    height: 0px; /* a px perché nel css viene definita in percentuale con l'alttributo padding bottom o top*/
+    padding-bottom: ($y/$x) * 100%;
+}
+

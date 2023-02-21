@@ -1,0 +1,32 @@
+@import "nav";
+
+$primary-color: #e74c3c;
+$secondary-color:#3498db;
+$primary-background: #aac0d6;
+$secondary-background: #2c3e50;
+
+.div {
+    background-color: $secondary-background;
+    color: $secondary-color;
+    margin: 10px;
+}
+
+/* extended serve per evitare di ripetere lo stesso codice in più sezioni ereditando
+il codice da una classe principale in questo caso .div*/
+.div-piccolo{
+    /*background-color: $secondary-background;*/
+    /*color: $secondary-color;*/
+    @extend .div;
+    font-size: 20px;
+    padding: 5px;
+    /*margin: 10px;*/
+}
+
+.div-grande{
+    /*background-color: $secondary-background;*/
+    /*color: $secondary-color;*/
+    @extend .div;
+    font-size: 26px;
+    padding: 15px;
+    /*margin: 10px;*/
+}

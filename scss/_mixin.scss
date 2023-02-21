@@ -1,8 +1,0 @@
-@mixin background-cover($img_url) {
-    background: url($img_url) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-

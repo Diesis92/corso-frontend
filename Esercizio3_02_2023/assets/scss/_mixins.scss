@@ -1,0 +1,10 @@
+@mixin g-font($name) {
+    @import url('https://fonts.googleapis.com/css2?family=#{$name}&display=swap');
+}
+
+@mixin h($size) {
+    h#{$size} {
+        font-size: (1 + (7 - $size)/20)em;
+        @content
+    }
+}

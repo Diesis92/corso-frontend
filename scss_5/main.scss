@@ -1,0 +1,51 @@
+@import "nav";
+
+$primary-color: #e74c3c;
+$secondary-color:#3498db;
+$primary-background: #aac0d6;
+$secondary-background: #2c3e50;
+
+/*.border-radius {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    misure che si adattano ai diversi browser, ma non possiamo mica modificare i valori  sempre per ogni template, quindi
+    che fare? A questo punto dovremmo usare il mixin che riceve un parametro
+    ($radius) che va ad essere assegnato alle nostre 4 proprietà Mixin viene attuato con include
+}*/
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.div {
+    background-color: $secondary-background;
+    color: $secondary-color;
+    margin: 10px;
+}
+
+/* extended serve per evitare di ripetere lo stesso codice in più sezioni ereditando
+il codice da una classe principale in questo caso .div*/
+.div-piccolo{
+    /*background-color: $secondary-background;*/
+    /*color: $secondary-color;*/
+    @extend .div;
+    @include border-radius(4px);
+    font-size: 20px;
+    padding: 5px;
+    /*margin: 10px;*/
+}
+
+.div-grande{
+    /*background-color: $secondary-background;*/
+    /*color: $secondary-color;*/
+    @extend .div;
+    @include border-radius(10px);
+    font-size: 26px;
+    padding: 15px;
+    /*margin: 10px;*/
+}

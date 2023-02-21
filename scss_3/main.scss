@@ -1,0 +1,11 @@
+@import "nav";
+
+$primary-color: #e74c3c;
+$secondary-color:#3498db;
+$primary-background: #aac0d6;
+$secondary-background: #2c3e50;
+
+h1 {
+    color: $primary-color;
+    background-color: $primary-background;
+}
